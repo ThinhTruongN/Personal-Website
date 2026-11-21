@@ -1,0 +1,2017 @@
+{
+ "updatedAt": "2026-11-21T21:26:48.040Z",
+ "timezone": "UTC",
+ "codeforces": {
+  "handle": "NomNomFull",
+  "url": "https://codeforces.com/profile/NomNomFull",
+  "rating": 2195,
+  "maxRating": 2195,
+  "rank": "master",
+  "maxRank": "master",
+  "contests": [
+   {
+    "name": "Codeforces Round 1071 (Div. 3)",
+    "url": "https://codeforces.com/contest/2179",
+    "t": 1766510100,
+    "rating": 482,
+    "delta": 482,
+    "place": 5935
+   },
+   {
+    "name": "Codeforces Round 1072 (Div. 3)",
+    "url": "https://codeforces.com/contest/2184",
+    "t": 1768236600,
+    "rating": 935,
+    "delta": 453,
+    "place": 832
+   },
+   {
+    "name": "Codeforces Round 1075 (Div. 2)",
+    "url": "https://codeforces.com/contest/2189",
+    "t": 1769186100,
+    "rating": 1180,
+    "delta": 245,
+    "place": 3751
+   },
+   {
+    "name": "Codeforces Round 1076 (Div. 3)",
+    "url": "https://codeforces.com/contest/2193",
+    "t": 1769359800,
+    "rating": 1519,
+    "delta": 339,
+    "place": 85
+   },
+   {
+    "name": "Codeforces Round 1077 (Div. 2)",
+    "url": "https://codeforces.com/contest/2188",
+    "t": 1769708100,
+    "rating": 1686,
+    "delta": 167,
+    "place": 572
+   },
+   {
+    "name": "Codeforces Round 1079 (Div. 2)",
+    "url": "https://codeforces.com/contest/2197",
+    "t": 1770831300,
+    "rating": 1718,
+    "delta": 32,
+    "place": 1586
+   },
+   {
+    "name": "Codeforces Round 1081 (Div. 2)",
+    "url": "https://codeforces.com/contest/2192",
+    "t": 1771691700,
+    "rating": 1790,
+    "delta": 72,
+    "place": 465
+   },
+   {
+    "name": "Codeforces Round 1082 (Div. 2)",
+    "url": "https://codeforces.com/contest/2202",
+    "t": 1771866300,
+    "rating": 1798,
+    "delta": 8,
+    "place": 601
+   },
+   {
+    "name": "Educational Codeforces Round 187 (Rated for Div. 2)",
+    "url": "https://codeforces.com/contest/2203",
+    "t": 1772037300,
+    "rating": 1949,
+    "delta": 151,
+    "place": 87
+   },
+   {
+    "name": "Codeforces Round 1083 (Div. 2)",
+    "url": "https://codeforces.com/contest/2205",
+    "t": 1772125500,
+    "rating": 1959,
+    "delta": 10,
+    "place": 410
+   },
+   {
+    "name": "Codeforces Round 1086 (Div. 2)",
+    "url": "https://codeforces.com/contest/2208",
+    "t": 1773506100,
+    "rating": 1883,
+    "delta": -76,
+    "place": 2002
+   },
+   {
+    "name": "Educational Codeforces Round 188 (Rated for Div. 2)",
+    "url": "https://codeforces.com/contest/2204",
+    "t": 1773679800,
+    "rating": 1945,
+    "delta": 62,
+    "place": 230
+   },
+   {
+    "name": "Nebius Round 2 (Codeforces Round 1088, Div. 1 + Div. 2)",
+    "url": "https://codeforces.com/contest/2211",
+    "t": 1774718100,
+    "rating": 1986,
+    "delta": 41,
+    "place": 694
+   },
+   {
+    "name": "Codeforces Round 1093 (Div. 1)",
+    "url": "https://codeforces.com/contest/2219",
+    "t": 1776098100,
+    "rating": 1977,
+    "delta": -9,
+    "place": 494
+   },
+   {
+    "name": "Educational Codeforces Round 189 (Rated for Div. 2)",
+    "url": "https://codeforces.com/contest/2225",
+    "t": 1776789300,
+    "rating": 1974,
+    "delta": -3,
+    "place": 471
+   },
+   {
+    "name": "Educational Codeforces Round 190 (Rated for Div. 2)",
+    "url": "https://codeforces.com/contest/2230",
+    "t": 1779122100,
+    "rating": 1884,
+    "delta": -90,
+    "place": 1827
+   },
+   {
+    "name": "Codeforces Round 1099 (Div. 2)",
+    "url": "https://codeforces.com/contest/2231",
+    "t": 1779381300,
+    "rating": 1963,
+    "delta": 79,
+    "place": 198
+   },
+   {
+    "name": "Codeforces Round 1101 (Div. 2)",
+    "url": "https://codeforces.com/contest/2232",
+    "t": 1780158900,
+    "rating": 2067,
+    "delta": 104,
+    "place": 76
+   },
+   {
+    "name": "Codeforces Round 1102 (Div. 2)",
+    "url": "https://codeforces.com/contest/2234",
+    "t": 1780851000,
+    "rating": 2070,
+    "delta": 3,
+    "place": 268
+   },
+   {
+    "name": "Order Capital Round 2 (Codeforces Round 1104, Div. 1 + Div. 2)",
+    "url": "https://codeforces.com/contest/2237",
+    "t": 1781804100,
+    "rating": 1931,
+    "delta": -139,
+    "place": 3336
+   },
+   {
+    "name": "Codeforces Round 1105 (Div. 1)",
+    "url": "https://codeforces.com/contest/2239",
+    "t": 1782579900,
+    "rating": 2066,
+    "delta": 135,
+    "place": 208
+   },
+   {
+    "name": "Spectral::Cup 2026 Round 3 (Codeforces Round 1110, Div. 1 + Div. 2)",
+    "url": "https://codeforces.com/contest/2245",
+    "t": 1784222100,
+    "rating": 2063,
+    "delta": -3,
+    "place": 590
+   },
+   {
+    "name": "Codeforces Round 1111 (Div. 2)",
+    "url": "https://codeforces.com/contest/2247",
+    "t": 1784392500,
+    "rating": 2098,
+    "delta": 35,
+    "place": 126
+   },
+   {
+    "name": "Codeforces Round 1112 (Div. 1)",
+    "url": "https://codeforces.com/contest/2249",
+    "t": 1785085500,
+    "rating": 2169,
+    "delta": 71,
+    "place": 197
+   },
+   {
+    "name": "Codeforces Round 1120 (Div. 1)",
+    "url": "https://codeforces.com/contest/2262",
+    "t": 1789234500,
+    "rating": 2090,
+    "delta": -79,
+    "place": 530
+   },
+   {
+    "name": "Codeforces Round 1130 (Div. 2)",
+    "url": "https://codeforces.com/contest/2272",
+    "t": 1793033400,
+    "rating": 2195,
+    "delta": 105,
+    "place": 22
+   }
+  ],
+  "solved": 378,
+  "solvedByRating": {
+   "800": 92,
+   "900": 19,
+   "1000": 22,
+   "1100": 19,
+   "1200": 25,
+   "1300": 29,
+   "1400": 17,
+   "1500": 25,
+   "1600": 24,
+   "1700": 20,
+   "1800": 17,
+   "1900": 17,
+   "2000": 16,
+   "2100": 7,
+   "2200": 6,
+   "2300": 10,
+   "2400": 4,
+   "2700": 1,
+   "2800": 1,
+   "3000": 1,
+   "unrated": 6
+  },
+  "tags": {
+   "brute force": 67,
+   "constructive algorithms": 79,
+   "data structures": 55,
+   "greedy": 174,
+   "implementation": 96,
+   "sortings": 46,
+   "dp": 82,
+   "geometry": 2,
+   "graphs": 19,
+   "expression parsing": 2,
+   "strings": 28,
+   "combinatorics": 14,
+   "divide and conquer": 9,
+   "dsu": 12,
+   "dfs and similar": 26,
+   "binary search": 52,
+   "two pointers": 35,
+   "math": 138,
+   "trees": 22,
+   "games": 13,
+   "shortest paths": 4,
+   "bitmasks": 21,
+   "hashing": 6,
+   "number theory": 36,
+   "2-sat": 2,
+   "schedules": 4,
+   "chinese remainder theorem": 2,
+   "probabilities": 1,
+   "interactive": 5,
+   "*special": 4,
+   "string suffix structures": 4,
+   "matrices": 1,
+   "graph matchings": 2,
+   "ternary search": 1,
+   "fft": 2,
+   "flows": 2
+  },
+  "daily": {
+   "2026-11-19": 1,
+   "2026-11-09": 1,
+   "2026-11-02": 1,
+   "2026-11-01": 5,
+   "2026-10-27": 1,
+   "2026-10-26": 6,
+   "2026-10-16": 1,
+   "2026-10-13": 1,
+   "2026-01-21": 2,
+   "2026-10-12": 1,
+   "2026-10-10": 3,
+   "2026-09-12": 2,
+   "2026-09-04": 1,
+   "2026-09-01": 2,
+   "2026-08-22": 1,
+   "2026-08-03": 1,
+   "2026-08-02": 1,
+   "2026-08-01": 1,
+   "2026-07-26": 4,
+   "2026-07-20": 3,
+   "2026-07-19": 1,
+   "2026-07-18": 5,
+   "2026-07-16": 5,
+   "2026-07-10": 2,
+   "2026-07-09": 1,
+   "2026-07-02": 2,
+   "2026-07-01": 1,
+   "2026-06-30": 6,
+   "2026-06-28": 2,
+   "2026-06-27": 3,
+   "2026-06-18": 5,
+   "2026-06-17": 1,
+   "2026-06-12": 6,
+   "2026-06-11": 3,
+   "2026-06-09": 2,
+   "2026-06-08": 4,
+   "2026-06-07": 5,
+   "2026-06-06": 1,
+   "2026-05-30": 5,
+   "2026-05-29": 1,
+   "2026-05-28": 2,
+   "2026-05-26": 1,
+   "2026-05-24": 4,
+   "2026-05-21": 4,
+   "2026-05-18": 3,
+   "2026-05-06": 4,
+   "2026-05-05": 3,
+   "2026-05-04": 1,
+   "2026-04-30": 3,
+   "2026-04-29": 2,
+   "2026-04-27": 2,
+   "2026-04-24": 3,
+   "2026-04-21": 4,
+   "2026-04-20": 3,
+   "2026-04-18": 5,
+   "2026-04-16": 1,
+   "2026-04-15": 1,
+   "2026-04-13": 5,
+   "2026-04-12": 1,
+   "2026-04-10": 2,
+   "2026-04-07": 2,
+   "2026-04-06": 1,
+   "2026-04-05": 6,
+   "2026-04-04": 5,
+   "2026-04-02": 1,
+   "2026-03-31": 1,
+   "2026-03-30": 2,
+   "2026-03-28": 5,
+   "2026-03-27": 4,
+   "2026-03-26": 1,
+   "2026-03-24": 1,
+   "2026-03-19": 1,
+   "2026-03-16": 6,
+   "2026-03-14": 4,
+   "2026-03-13": 2,
+   "2026-03-11": 1,
+   "2026-03-09": 1,
+   "2026-03-08": 2,
+   "2026-03-07": 1,
+   "2026-03-06": 1,
+   "2026-03-04": 2,
+   "2026-03-03": 1,
+   "2026-03-02": 2,
+   "2026-02-28": 3,
+   "2026-02-27": 1,
+   "2026-02-26": 6,
+   "2026-02-25": 6,
+   "2026-02-24": 2,
+   "2026-02-23": 5,
+   "2025-12-23": 5,
+   "2026-02-21": 7,
+   "2026-02-20": 1,
+   "2025-12-17": 2,
+   "2026-02-19": 1,
+   "2026-02-18": 9,
+   "2026-02-17": 1,
+   "2026-02-15": 6,
+   "2026-02-12": 5,
+   "2026-02-11": 5,
+   "2026-02-09": 2,
+   "2026-02-08": 2,
+   "2026-02-07": 1,
+   "2026-02-05": 1,
+   "2026-02-04": 2,
+   "2026-02-03": 1,
+   "2026-02-02": 3,
+   "2026-02-01": 1,
+   "2026-01-31": 1,
+   "2026-01-29": 4,
+   "2026-01-28": 2,
+   "2026-01-26": 1,
+   "2026-01-25": 8,
+   "2026-01-24": 1,
+   "2026-01-23": 4,
+   "2026-01-22": 1,
+   "2026-01-20": 4,
+   "2026-01-18": 5,
+   "2026-01-17": 1,
+   "2026-01-15": 2,
+   "2026-01-14": 7,
+   "2026-01-13": 2,
+   "2026-01-12": 5,
+   "2026-01-11": 4,
+   "2026-01-10": 1,
+   "2026-01-08": 1,
+   "2026-01-07": 2,
+   "2026-01-06": 1,
+   "2026-01-05": 1,
+   "2026-01-04": 1,
+   "2026-01-03": 1,
+   "2026-01-02": 3,
+   "2026-01-01": 1,
+   "2025-12-30": 1,
+   "2025-12-29": 1,
+   "2025-12-28": 5,
+   "2025-12-27": 1,
+   "2025-12-24": 2,
+   "2025-12-22": 3,
+   "2025-12-21": 1,
+   "2025-12-20": 1,
+   "2025-12-19": 2,
+   "2025-12-18": 2,
+   "2025-12-16": 1,
+   "2025-12-01": 2,
+   "2025-11-29": 1,
+   "2025-11-28": 1,
+   "2025-11-26": 1,
+   "2025-11-22": 1,
+   "2025-11-19": 1,
+   "2025-11-18": 2
+  }
+ },
+ "atcoder": {
+  "handle": "NomNomCode",
+  "url": "https://atcoder.jp/users/NomNomCode",
+  "rating": 3,
+  "maxRating": 3,
+  "contests": [
+   {
+    "name": "AtCoder Beginner Contest 468",
+    "url": "https://atcoder.jp/contests/abc468",
+    "t": 1784986800,
+    "rating": 3,
+    "delta": 3,
+    "performance": -375,
+    "place": 11043
+   }
+  ],
+  "solved": 12,
+  "daily": {
+   "2026-03-26": 1,
+   "2026-03-31": 1,
+   "2026-04-01": 4,
+   "2026-04-02": 1,
+   "2026-07-18": 1,
+   "2026-07-22": 1,
+   "2026-07-23": 1,
+   "2026-07-30": 1,
+   "2026-08-28": 1
+  }
+ },
+ "leetcode": {
+  "handle": "NomNomCode",
+  "url": "https://leetcode.com/u/NomNomCode/",
+  "rating": 2287,
+  "maxRating": 2287,
+  "topPercentage": 0.58,
+  "badge": "Guardian",
+  "contests": [
+   {
+    "name": "Weekly Contest 472",
+    "t": 1760841000,
+    "rating": 1504,
+    "delta": 4,
+    "place": 11153
+   },
+   {
+    "name": "Biweekly Contest 168",
+    "t": 1761402600,
+    "rating": 1510,
+    "delta": 6,
+    "place": 9829
+   },
+   {
+    "name": "Weekly Contest 473",
+    "t": 1761445800,
+    "rating": 1580,
+    "delta": 70,
+    "place": 3401
+   },
+   {
+    "name": "Weekly Contest 474",
+    "t": 1762050600,
+    "rating": 1640,
+    "delta": 60,
+    "place": 2804
+   },
+   {
+    "name": "Biweekly Contest 169",
+    "t": 1762612200,
+    "rating": 1715,
+    "delta": 75,
+    "place": 1206
+   },
+   {
+    "name": "Weekly Contest 478",
+    "t": 1764469800,
+    "rating": 1748,
+    "delta": 33,
+    "place": 2463
+   },
+   {
+    "name": "Weekly Contest 479",
+    "t": 1765074600,
+    "rating": 1859,
+    "delta": 111,
+    "place": 186
+   },
+   {
+    "name": "Weekly Contest 482",
+    "t": 1766889000,
+    "rating": 1901,
+    "delta": 42,
+    "place": 1123
+   },
+   {
+    "name": "Weekly Contest 487",
+    "t": 1769913000,
+    "rating": 1993,
+    "delta": 92,
+    "place": 189
+   },
+   {
+    "name": "Weekly Contest 488",
+    "t": 1770517800,
+    "rating": 2044,
+    "delta": 51,
+    "place": 565
+   },
+   {
+    "name": "Weekly Contest 489",
+    "t": 1771122600,
+    "rating": 2059,
+    "delta": 15,
+    "place": 1613
+   },
+   {
+    "name": "Weekly Contest 490",
+    "t": 1771727400,
+    "rating": 1985,
+    "delta": -74,
+    "place": 30370
+   },
+   {
+    "name": "Weekly Contest 496",
+    "t": 1775356200,
+    "rating": 2011,
+    "delta": 26,
+    "place": 1384
+   },
+   {
+    "name": "Weekly Contest 497",
+    "t": 1775961000,
+    "rating": 2087,
+    "delta": 76,
+    "place": 203
+   },
+   {
+    "name": "Weekly Contest 498",
+    "t": 1776565800,
+    "rating": 2165,
+    "delta": 78,
+    "place": 124
+   },
+   {
+    "name": "Weekly Contest 499",
+    "t": 1777170600,
+    "rating": 2141,
+    "delta": -24,
+    "place": 3499
+   },
+   {
+    "name": "Biweekly Contest 182",
+    "t": 1778337000,
+    "rating": 2099,
+    "delta": -42,
+    "place": 6001
+   },
+   {
+    "name": "Weekly Contest 501",
+    "t": 1778380200,
+    "rating": 2165,
+    "delta": 66,
+    "place": 172
+   },
+   {
+    "name": "Weekly Contest 503",
+    "t": 1779589800,
+    "rating": 2165,
+    "delta": 0,
+    "place": 1507
+   },
+   {
+    "name": "Weekly Contest 507",
+    "t": 1782009000,
+    "rating": 2202,
+    "delta": 37,
+    "place": 370
+   },
+   {
+    "name": "Weekly Contest 511",
+    "t": 1784428200,
+    "rating": 2245,
+    "delta": 43,
+    "place": 235
+   },
+   {
+    "name": "Weekly Contest 523",
+    "t": 1791685800,
+    "rating": 2287,
+    "delta": 42,
+    "place": 165
+   }
+  ],
+  "solved": 679,
+  "solvedByDifficulty": {
+   "easy": 202,
+   "medium": 367,
+   "hard": 110
+  },
+  "daily": {
+   "2023-08-31": 1,
+   "2023-09-22": 2,
+   "2023-09-25": 1,
+   "2023-10-01": 8,
+   "2023-10-08": 1,
+   "2023-10-12": 1,
+   "2023-10-20": 4,
+   "2024-02-29": 1,
+   "2024-03-01": 1,
+   "2024-03-04": 1,
+   "2024-04-16": 4,
+   "2024-09-30": 2,
+   "2024-10-05": 2,
+   "2025-03-20": 1,
+   "2025-03-21": 2,
+   "2025-03-29": 3,
+   "2025-04-08": 2,
+   "2025-04-09": 2,
+   "2025-04-10": 4,
+   "2025-04-11": 3,
+   "2025-04-14": 6,
+   "2025-04-15": 24,
+   "2025-04-16": 5,
+   "2025-04-17": 2,
+   "2025-04-18": 3,
+   "2025-04-19": 3,
+   "2025-04-20": 3,
+   "2025-04-21": 2,
+   "2025-04-22": 4,
+   "2025-04-24": 10,
+   "2025-04-25": 4,
+   "2025-04-26": 4,
+   "2025-04-27": 6,
+   "2025-04-28": 3,
+   "2025-04-29": 5,
+   "2025-04-30": 3,
+   "2025-05-01": 2,
+   "2025-05-02": 1,
+   "2025-05-03": 6,
+   "2025-05-04": 1,
+   "2025-05-05": 8,
+   "2025-05-06": 1,
+   "2025-05-07": 1,
+   "2025-05-08": 1,
+   "2025-05-09": 5,
+   "2025-05-10": 4,
+   "2025-05-11": 7,
+   "2025-05-12": 2,
+   "2025-05-13": 6,
+   "2025-05-14": 13,
+   "2025-05-15": 5,
+   "2025-05-16": 2,
+   "2025-05-18": 4,
+   "2025-05-19": 3,
+   "2025-05-20": 4,
+   "2025-05-21": 1,
+   "2025-05-22": 1,
+   "2025-05-27": 2,
+   "2025-05-28": 1,
+   "2025-05-30": 2,
+   "2025-06-05": 2,
+   "2025-06-08": 1,
+   "2025-06-09": 7,
+   "2025-06-10": 1,
+   "2025-06-12": 2,
+   "2025-06-13": 2,
+   "2025-06-17": 1,
+   "2025-06-19": 4,
+   "2025-06-27": 3,
+   "2025-07-11": 1,
+   "2025-07-13": 1,
+   "2025-07-21": 1,
+   "2025-08-09": 1,
+   "2025-08-15": 1,
+   "2025-08-16": 1,
+   "2025-08-17": 2,
+   "2025-08-18": 4,
+   "2025-08-19": 2,
+   "2025-08-20": 1,
+   "2025-08-22": 2,
+   "2025-08-23": 2,
+   "2025-08-24": 1,
+   "2025-08-25": 2,
+   "2025-08-26": 1,
+   "2025-08-27": 2,
+   "2025-08-29": 4,
+   "2025-08-30": 1,
+   "2025-08-31": 1,
+   "2025-09-01": 1,
+   "2025-09-04": 3,
+   "2025-09-05": 1,
+   "2025-09-06": 5,
+   "2025-09-07": 1,
+   "2025-09-08": 4,
+   "2025-09-09": 5,
+   "2025-09-15": 2,
+   "2025-09-22": 1,
+   "2025-09-23": 1,
+   "2025-09-27": 1,
+   "2025-09-29": 2,
+   "2025-10-02": 2,
+   "2025-10-04": 1,
+   "2025-10-19": 7,
+   "2025-10-21": 10,
+   "2025-10-22": 6,
+   "2025-10-23": 7,
+   "2025-10-24": 1,
+   "2025-10-25": 4,
+   "2025-10-26": 12,
+   "2025-10-27": 4,
+   "2025-10-28": 7,
+   "2025-10-29": 3,
+   "2025-10-30": 2,
+   "2025-10-31": 1,
+   "2025-11-01": 2,
+   "2025-11-02": 5,
+   "2025-11-03": 3,
+   "2025-11-04": 1,
+   "2025-11-06": 7,
+   "2025-11-07": 2,
+   "2025-11-08": 5,
+   "2025-11-11": 2,
+   "2025-11-12": 4,
+   "2025-11-18": 1,
+   "2025-11-22": 1,
+   "2025-11-23": 1,
+   "2025-11-25": 1,
+   "2025-11-30": 13,
+   "2025-12-02": 1,
+   "2025-12-04": 2,
+   "2025-12-05": 1,
+   "2025-12-06": 12,
+   "2025-12-07": 8,
+   "2025-12-08": 2,
+   "2025-12-09": 1,
+   "2025-12-10": 2,
+   "2025-12-11": 1,
+   "2025-12-12": 1,
+   "2025-12-13": 2,
+   "2025-12-14": 4,
+   "2025-12-15": 8,
+   "2025-12-16": 3,
+   "2025-12-17": 1,
+   "2025-12-18": 3,
+   "2025-12-19": 1,
+   "2025-12-20": 1,
+   "2025-12-21": 6,
+   "2025-12-22": 4,
+   "2025-12-23": 1,
+   "2025-12-24": 8,
+   "2025-12-26": 11,
+   "2025-12-28": 8,
+   "2025-12-29": 4,
+   "2025-12-30": 4,
+   "2025-12-31": 1,
+   "2026-01-01": 3,
+   "2026-01-02": 2,
+   "2026-01-03": 7,
+   "2026-01-04": 8,
+   "2026-01-05": 1,
+   "2026-01-06": 2,
+   "2026-01-07": 1,
+   "2026-01-08": 2,
+   "2026-01-09": 5,
+   "2026-01-10": 1,
+   "2026-01-11": 1,
+   "2026-01-12": 1,
+   "2026-01-13": 2,
+   "2026-01-14": 1,
+   "2026-01-15": 1,
+   "2026-01-16": 1,
+   "2026-01-17": 1,
+   "2026-01-20": 1,
+   "2026-01-21": 1,
+   "2026-01-22": 1,
+   "2026-01-23": 1,
+   "2026-01-24": 4,
+   "2026-01-25": 1,
+   "2026-01-26": 7,
+   "2026-01-27": 1,
+   "2026-01-28": 1,
+   "2026-01-29": 2,
+   "2026-01-30": 5,
+   "2026-01-31": 2,
+   "2026-02-01": 4,
+   "2026-02-02": 5,
+   "2026-02-03": 2,
+   "2026-02-04": 2,
+   "2026-02-05": 2,
+   "2026-02-06": 1,
+   "2026-02-07": 6,
+   "2026-02-08": 12,
+   "2026-02-09": 3,
+   "2026-02-10": 3,
+   "2026-02-11": 6,
+   "2026-02-12": 3,
+   "2026-02-13": 3,
+   "2026-02-14": 3,
+   "2026-02-15": 10,
+   "2026-02-16": 12,
+   "2026-02-17": 3,
+   "2026-02-18": 4,
+   "2026-02-19": 3,
+   "2026-02-20": 5,
+   "2026-02-21": 4,
+   "2026-02-22": 5,
+   "2026-02-23": 1,
+   "2026-02-24": 3,
+   "2026-02-25": 1,
+   "2026-02-26": 3,
+   "2026-02-27": 1,
+   "2026-02-28": 4,
+   "2026-03-01": 1,
+   "2026-03-02": 1,
+   "2026-03-04": 4,
+   "2026-03-05": 5,
+   "2026-03-06": 7,
+   "2026-03-07": 1,
+   "2026-03-08": 1,
+   "2026-03-09": 7,
+   "2026-03-10": 1,
+   "2026-03-11": 5,
+   "2026-03-12": 2,
+   "2026-03-13": 1,
+   "2026-03-14": 1,
+   "2026-03-15": 5,
+   "2026-03-16": 1,
+   "2026-03-17": 1,
+   "2026-03-18": 3,
+   "2026-03-19": 9,
+   "2026-03-20": 5,
+   "2026-03-21": 3,
+   "2026-03-22": 8,
+   "2026-03-23": 2,
+   "2026-03-24": 1,
+   "2026-03-25": 2,
+   "2026-03-26": 5,
+   "2026-03-27": 3,
+   "2026-03-28": 6,
+   "2026-03-30": 2,
+   "2026-03-31": 1,
+   "2026-04-01": 1,
+   "2026-04-02": 8,
+   "2026-04-03": 5,
+   "2026-04-04": 1,
+   "2026-04-05": 6,
+   "2026-04-06": 2,
+   "2026-04-07": 1,
+   "2026-04-08": 5,
+   "2026-04-09": 2,
+   "2026-04-11": 4,
+   "2026-04-12": 8,
+   "2026-04-13": 4,
+   "2026-04-14": 2,
+   "2026-04-15": 3,
+   "2026-04-16": 8,
+   "2026-04-17": 3,
+   "2026-04-18": 1,
+   "2026-04-19": 4,
+   "2026-04-20": 5,
+   "2026-04-21": 1,
+   "2026-04-22": 10,
+   "2026-04-23": 4,
+   "2026-04-24": 2,
+   "2026-04-25": 10,
+   "2026-04-26": 10,
+   "2026-04-27": 8,
+   "2026-04-28": 1,
+   "2026-04-29": 4,
+   "2026-05-03": 2,
+   "2026-05-04": 1,
+   "2026-05-05": 2,
+   "2026-05-06": 4,
+   "2026-05-07": 6,
+   "2026-05-08": 3,
+   "2026-05-09": 6,
+   "2026-05-10": 4,
+   "2026-05-11": 6,
+   "2026-05-12": 6,
+   "2026-05-13": 6,
+   "2026-05-14": 3,
+   "2026-05-18": 1,
+   "2026-05-19": 4,
+   "2026-05-20": 6,
+   "2026-05-21": 3,
+   "2026-05-22": 9,
+   "2026-05-23": 10,
+   "2026-05-24": 9,
+   "2026-05-25": 1,
+   "2026-05-26": 3,
+   "2026-05-27": 5,
+   "2026-05-28": 1,
+   "2026-05-29": 1,
+   "2026-05-30": 9,
+   "2026-05-31": 5,
+   "2026-06-01": 5,
+   "2026-06-03": 2,
+   "2026-06-05": 4,
+   "2026-06-06": 10,
+   "2026-06-07": 2,
+   "2026-06-08": 8,
+   "2026-06-09": 5,
+   "2026-06-10": 5,
+   "2026-06-11": 9,
+   "2026-06-13": 1,
+   "2026-06-14": 3,
+   "2026-06-15": 1,
+   "2026-06-16": 1,
+   "2026-06-17": 2,
+   "2026-06-18": 2,
+   "2026-06-19": 8,
+   "2026-06-20": 1,
+   "2026-06-21": 11,
+   "2026-06-22": 2,
+   "2026-06-23": 1,
+   "2026-06-24": 3,
+   "2026-06-25": 1,
+   "2026-06-26": 1,
+   "2026-06-27": 3,
+   "2026-06-28": 8,
+   "2026-06-30": 4,
+   "2026-07-01": 1,
+   "2026-07-02": 1,
+   "2026-07-03": 2,
+   "2026-07-04": 1,
+   "2026-07-05": 1,
+   "2026-07-06": 9,
+   "2026-07-07": 1,
+   "2026-07-08": 2,
+   "2026-07-09": 2,
+   "2026-07-10": 1,
+   "2026-07-11": 1,
+   "2026-07-12": 2,
+   "2026-07-13": 7,
+   "2026-07-14": 2,
+   "2026-07-15": 1,
+   "2026-07-16": 1,
+   "2026-07-17": 1,
+   "2026-07-18": 1,
+   "2026-07-19": 7,
+   "2026-07-20": 1,
+   "2026-07-21": 1,
+   "2026-07-22": 1,
+   "2026-07-23": 1,
+   "2026-07-24": 1,
+   "2026-07-25": 1,
+   "2026-07-26": 8,
+   "2026-07-27": 1,
+   "2026-07-28": 1,
+   "2026-07-30": 4,
+   "2026-07-31": 2,
+   "2026-08-02": 4,
+   "2026-08-03": 1,
+   "2026-08-04": 1,
+   "2026-08-05": 1,
+   "2026-08-06": 1,
+   "2026-08-10": 2,
+   "2026-08-11": 2,
+   "2026-08-14": 3,
+   "2026-08-20": 1,
+   "2026-08-23": 1,
+   "2026-08-24": 1,
+   "2026-08-25": 2,
+   "2026-08-26": 2,
+   "2026-08-30": 1,
+   "2026-08-31": 1,
+   "2026-09-01": 1,
+   "2026-09-02": 1,
+   "2026-09-04": 1,
+   "2026-09-06": 1,
+   "2026-09-08": 7,
+   "2026-09-09": 1,
+   "2026-09-10": 5,
+   "2026-09-15": 5,
+   "2026-09-17": 4,
+   "2026-09-20": 1,
+   "2026-09-29": 8,
+   "2026-09-30": 1,
+   "2026-10-01": 1,
+   "2026-10-02": 1,
+   "2026-10-11": 5,
+   "2026-10-27": 1
+  }
+ },
+ "sheet": {
+  "cses": {
+   "name": "CSES",
+   "solved": 92,
+   "total": 400,
+   "categories": [
+    {
+     "name": "Introductory Problems",
+     "solved": 13,
+     "total": 24
+    },
+    {
+     "name": "Sorting and Searching",
+     "solved": 9,
+     "total": 35
+    },
+    {
+     "name": "Dynamic Programming",
+     "solved": 23,
+     "total": 23
+    },
+    {
+     "name": "Graph Algorithms",
+     "solved": 12,
+     "total": 36
+    },
+    {
+     "name": "Range Queries",
+     "solved": 14,
+     "total": 25
+    },
+    {
+     "name": "Tree Algorithms",
+     "solved": 3,
+     "total": 16
+    },
+    {
+     "name": "Mathematics",
+     "solved": 3,
+     "total": 37
+    },
+    {
+     "name": "String Algorithms",
+     "solved": 0,
+     "total": 21
+    },
+    {
+     "name": "Geometry",
+     "solved": 0,
+     "total": 16
+    },
+    {
+     "name": "Advanced Techniques",
+     "solved": 1,
+     "total": 25
+    },
+    {
+     "name": "Sliding Window Problems",
+     "solved": 1,
+     "total": 11
+    },
+    {
+     "name": "Interactive Problems",
+     "solved": 6,
+     "total": 6
+    },
+    {
+     "name": "Bitwise Operations",
+     "solved": 0,
+     "total": 11
+    },
+    {
+     "name": "Construction Problems",
+     "solved": 0,
+     "total": 8
+    },
+    {
+     "name": "Advanced Graph Problems",
+     "solved": 5,
+     "total": 28
+    },
+    {
+     "name": "Counting Problems",
+     "solved": 0,
+     "total": 18
+    },
+    {
+     "name": "Additional Problems I",
+     "solved": 1,
+     "total": 30
+    },
+    {
+     "name": "Additional Problems II",
+     "solved": 1,
+     "total": 30
+    }
+   ]
+  },
+  "usacoGuide": {
+   "solved": 18,
+   "total": 1496,
+   "tiers": [
+    {
+     "name": "Bronze",
+     "solved": 0,
+     "total": 116,
+     "categories": [
+      {
+       "name": "Simulation",
+       "solved": 0,
+       "total": 15
+      },
+      {
+       "name": "Simulation; Introduction to Sets & Maps",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Basic Complete Search",
+       "solved": 0,
+       "total": 20
+      },
+      {
+       "name": "Complete Search with Recursion",
+       "solved": 0,
+       "total": 8
+      },
+      {
+       "name": "Complete Search with Recursion; Introduction to Graphs",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Complete Search with Recursion; Casework",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Introduction to Sorting",
+       "solved": 0,
+       "total": 7
+      },
+      {
+       "name": "Introduction to Sorting; Introduction to Sets & Maps",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Introduction to Sets & Maps",
+       "solved": 0,
+       "total": 11
+      },
+      {
+       "name": "Casework",
+       "solved": 0,
+       "total": 5
+      },
+      {
+       "name": "Casework; Rectangle Geometry",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Introduction to Greedy Algorithms",
+       "solved": 0,
+       "total": 11
+      },
+      {
+       "name": "Introduction to Graphs",
+       "solved": 0,
+       "total": 6
+      },
+      {
+       "name": "Rectangle Geometry",
+       "solved": 0,
+       "total": 6
+      },
+      {
+       "name": "Ad Hoc Problems",
+       "solved": 0,
+       "total": 6
+      },
+      {
+       "name": "Additional Practice for USACO Bronze",
+       "solved": 0,
+       "total": 16
+      }
+     ]
+    },
+    {
+     "name": "Silver",
+     "solved": 0,
+     "total": 265,
+     "categories": [
+      {
+       "name": "Introduction to Prefix Sums",
+       "solved": 0,
+       "total": 14
+      },
+      {
+       "name": "More on Prefix Sums",
+       "solved": 0,
+       "total": 16
+      },
+      {
+       "name": "More on Prefix Sums; Custom Comparators and Coordinate Compression",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Two Pointers",
+       "solved": 0,
+       "total": 13
+      },
+      {
+       "name": "Two Pointers; Binary Search on a Sorted Array",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Binary Search on a Sorted Array",
+       "solved": 0,
+       "total": 4
+      },
+      {
+       "name": "Binary Search",
+       "solved": 0,
+       "total": 21
+      },
+      {
+       "name": "Custom Comparators and Coordinate Compression",
+       "solved": 0,
+       "total": 14
+      },
+      {
+       "name": "Greedy Algorithms with Sorting",
+       "solved": 0,
+       "total": 17
+      },
+      {
+       "name": "Priority Queues",
+       "solved": 0,
+       "total": 13
+      },
+      {
+       "name": "Graph Traversal",
+       "solved": 0,
+       "total": 24
+      },
+      {
+       "name": "Flood Fill",
+       "solved": 0,
+       "total": 16
+      },
+      {
+       "name": "Introduction to Tree Algorithms",
+       "solved": 0,
+       "total": 18
+      },
+      {
+       "name": "Introduction to Functional Graphs",
+       "solved": 0,
+       "total": 7
+      },
+      {
+       "name": "Intro to Bitwise Operators",
+       "solved": 0,
+       "total": 17
+      },
+      {
+       "name": "Additional Practice for USACO Silver",
+       "solved": 0,
+       "total": 69
+      }
+     ]
+    },
+    {
+     "name": "Gold",
+     "solved": 17,
+     "total": 434,
+     "categories": [
+      {
+       "name": "Divisibility",
+       "solved": 4,
+       "total": 16
+      },
+      {
+       "name": "Modular Arithmetic",
+       "solved": 0,
+       "total": 6
+      },
+      {
+       "name": "Modular Arithmetic; Sliding Window",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Combinatorics",
+       "solved": 0,
+       "total": 19
+      },
+      {
+       "name": "Introduction to DP",
+       "solved": 7,
+       "total": 16
+      },
+      {
+       "name": "Introduction to DP; Shortest Paths with Non-Negative Edge Weights",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Knapsack DP",
+       "solved": 0,
+       "total": 22
+      },
+      {
+       "name": "Paths on Grids",
+       "solved": 0,
+       "total": 12
+      },
+      {
+       "name": "Longest Increasing Subsequence",
+       "solved": 0,
+       "total": 12
+      },
+      {
+       "name": "Longest Increasing Subsequence; More Operations on Sorted Sets",
+       "solved": 1,
+       "total": 1
+      },
+      {
+       "name": "Bitmask DP",
+       "solved": 0,
+       "total": 20
+      },
+      {
+       "name": "Bitmask DP; (Optional) Meet In The Middle",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Bitmask DP; DP on Trees - Introduction",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Range DP",
+       "solved": 0,
+       "total": 9
+      },
+      {
+       "name": "Digit DP",
+       "solved": 0,
+       "total": 7
+      },
+      {
+       "name": "Shortest Paths with Unweighted Edges",
+       "solved": 0,
+       "total": 17
+      },
+      {
+       "name": "Disjoint Set Union",
+       "solved": 0,
+       "total": 17
+      },
+      {
+       "name": "Topological Sort",
+       "solved": 0,
+       "total": 13
+      },
+      {
+       "name": "Shortest Paths with Non-Negative Edge Weights",
+       "solved": 0,
+       "total": 19
+      },
+      {
+       "name": "Minimum Spanning Trees",
+       "solved": 0,
+       "total": 15
+      },
+      {
+       "name": "More Operations on Sorted Sets",
+       "solved": 5,
+       "total": 12
+      },
+      {
+       "name": "Stacks",
+       "solved": 0,
+       "total": 17
+      },
+      {
+       "name": "Sliding Window",
+       "solved": 0,
+       "total": 20
+      },
+      {
+       "name": "Point Update Range Sum",
+       "solved": 0,
+       "total": 17
+      },
+      {
+       "name": "DP on Trees - Introduction",
+       "solved": 0,
+       "total": 21
+      },
+      {
+       "name": "DP on Trees - Solving For All Roots",
+       "solved": 0,
+       "total": 10
+      },
+      {
+       "name": "(Optional) Euler Tour Technique",
+       "solved": 0,
+       "total": 7
+      },
+      {
+       "name": "(Optional) LCA with Euler Tour",
+       "solved": 0,
+       "total": 7
+      },
+      {
+       "name": "Optimizing Unimodal Functions",
+       "solved": 0,
+       "total": 8
+      },
+      {
+       "name": "Hashing",
+       "solved": 0,
+       "total": 19
+      },
+      {
+       "name": "(Optional) Hashmaps",
+       "solved": 0,
+       "total": 2
+      },
+      {
+       "name": "(Optional) Meet In The Middle",
+       "solved": 0,
+       "total": 7
+      },
+      {
+       "name": "Additional Practice for USACO Gold",
+       "solved": 0,
+       "total": 62
+      }
+     ]
+    },
+    {
+     "name": "Platinum",
+     "solved": 1,
+     "total": 288,
+     "categories": [
+      {
+       "name": "More Applications of Segment Tree",
+       "solved": 1,
+       "total": 15
+      },
+      {
+       "name": "Range Queries with Sweep Line",
+       "solved": 0,
+       "total": 10
+      },
+      {
+       "name": "Range Update Range Query",
+       "solved": 0,
+       "total": 14
+      },
+      {
+       "name": "Range Update Range Query; Sparse Segment Trees",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Sparse Segment Trees",
+       "solved": 0,
+       "total": 2
+      },
+      {
+       "name": "2D Range Queries",
+       "solved": 0,
+       "total": 10
+      },
+      {
+       "name": "Divide & Conquer - SRQ",
+       "solved": 0,
+       "total": 7
+      },
+      {
+       "name": "Divide & Conquer - SRQ; Binary Jumping",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Square Root Decomposition",
+       "solved": 0,
+       "total": 24
+      },
+      {
+       "name": "Square Root Decomposition; Sum over Subsets DP",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Square Root Decomposition; Binary Jumping; Centroid Decomposition",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Square Root Decomposition; Heavy-Light Decomposition",
+       "solved": 0,
+       "total": 3
+      },
+      {
+       "name": "Square Root Decomposition; Centroid Decomposition",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Binary Jumping",
+       "solved": 0,
+       "total": 26
+      },
+      {
+       "name": "Binary Jumping; Heavy-Light Decomposition",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Binary Jumping; Small-To-Large Merging; Heavy-Light Decomposition",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Binary Jumping; Centroid Decomposition",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Small-To-Large Merging",
+       "solved": 0,
+       "total": 7
+      },
+      {
+       "name": "Small-To-Large Merging; Centroid Decomposition",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Small-To-Large Merging; Virtual Tree",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Heavy-Light Decomposition",
+       "solved": 0,
+       "total": 8
+      },
+      {
+       "name": "Heavy-Light Decomposition; Centroid Decomposition",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Centroid Decomposition",
+       "solved": 0,
+       "total": 13
+      },
+      {
+       "name": "Virtual Tree",
+       "solved": 0,
+       "total": 6
+      },
+      {
+       "name": "Kruskal Reconstruction Tree",
+       "solved": 0,
+       "total": 6
+      },
+      {
+       "name": "Geometry Primitives",
+       "solved": 0,
+       "total": 19
+      },
+      {
+       "name": "Sweep Line",
+       "solved": 0,
+       "total": 16
+      },
+      {
+       "name": "Convex Hull",
+       "solved": 0,
+       "total": 9
+      },
+      {
+       "name": "Convex Hull Trick",
+       "solved": 0,
+       "total": 11
+      },
+      {
+       "name": "Convex Hull Trick; Divide & Conquer - DP",
+       "solved": 0,
+       "total": 3
+      },
+      {
+       "name": "Inclusion-Exclusion Principle",
+       "solved": 0,
+       "total": 8
+      },
+      {
+       "name": "Inclusion-Exclusion Principle; (Optional) Bitsets",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Matrix Exponentiation",
+       "solved": 0,
+       "total": 10
+      },
+      {
+       "name": "(Optional) Bitsets",
+       "solved": 0,
+       "total": 14
+      },
+      {
+       "name": "Divide & Conquer - DP",
+       "solved": 0,
+       "total": 8
+      },
+      {
+       "name": "Sum over Subsets DP",
+       "solved": 0,
+       "total": 10
+      },
+      {
+       "name": "Additional Practice for USACO Platinum",
+       "solved": 0,
+       "total": 17
+      }
+     ]
+    },
+    {
+     "name": "Advanced",
+     "solved": 0,
+     "total": 393,
+     "categories": [
+      {
+       "name": "Max Suffix Query with Insertions Only",
+       "solved": 0,
+       "total": 6
+      },
+      {
+       "name": "Wavelet Tree",
+       "solved": 0,
+       "total": 6
+      },
+      {
+       "name": "Wavelet Tree; Persistent Data Structures",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Counting Minimums with Segment Tree",
+       "solved": 0,
+       "total": 6
+      },
+      {
+       "name": "Segment Tree Beats",
+       "solved": 0,
+       "total": 10
+      },
+      {
+       "name": "Persistent Data Structures",
+       "solved": 0,
+       "total": 11
+      },
+      {
+       "name": "Persistent Data Structures; Euler's Formula",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Persistent Data Structures; Fracturing Search",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Treaps",
+       "solved": 0,
+       "total": 10
+      },
+      {
+       "name": "LineContainer",
+       "solved": 0,
+       "total": 12
+      },
+      {
+       "name": "Lagrangian Relaxation",
+       "solved": 0,
+       "total": 8
+      },
+      {
+       "name": "Slope Trick",
+       "solved": 0,
+       "total": 13
+      },
+      {
+       "name": "Shortest Paths with Negative Edge Weights",
+       "solved": 0,
+       "total": 6
+      },
+      {
+       "name": "Eulerian Tours",
+       "solved": 0,
+       "total": 10
+      },
+      {
+       "name": "BCCs and 2CCs",
+       "solved": 0,
+       "total": 12
+      },
+      {
+       "name": "Strongly Connected Components",
+       "solved": 0,
+       "total": 18
+      },
+      {
+       "name": "Offline Deletion",
+       "solved": 0,
+       "total": 9
+      },
+      {
+       "name": "Offline Deletion; Link Cut Tree",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Euler's Formula",
+       "solved": 0,
+       "total": 6
+      },
+      {
+       "name": "Critical",
+       "solved": 0,
+       "total": 4
+      },
+      {
+       "name": "Link Cut Tree",
+       "solved": 0,
+       "total": 17
+      },
+      {
+       "name": "DP on Trees - Combining Subtrees",
+       "solved": 0,
+       "total": 9
+      },
+      {
+       "name": "DP on Broken Profile",
+       "solved": 0,
+       "total": 5
+      },
+      {
+       "name": "Additional DP Optimizations and Techniques",
+       "solved": 0,
+       "total": 10
+      },
+      {
+       "name": "Maximum Flow",
+       "solved": 0,
+       "total": 5
+      },
+      {
+       "name": "Minimum Cut",
+       "solved": 0,
+       "total": 10
+      },
+      {
+       "name": "Flow with Lower Bounds",
+       "solved": 0,
+       "total": 6
+      },
+      {
+       "name": "Minimum Cost Flow",
+       "solved": 0,
+       "total": 10
+      },
+      {
+       "name": "Introduction to Fast Fourier Transform",
+       "solved": 0,
+       "total": 8
+      },
+      {
+       "name": "More Complex Operations Using FFT",
+       "solved": 0,
+       "total": 4
+      },
+      {
+       "name": "String Searching",
+       "solved": 0,
+       "total": 40
+      },
+      {
+       "name": "Suffix Array",
+       "solved": 0,
+       "total": 5
+      },
+      {
+       "name": "Suffix Array; String Suffix Structures",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "String Suffix Structures",
+       "solved": 0,
+       "total": 16
+      },
+      {
+       "name": "Extended Euclidean Algorithm",
+       "solved": 0,
+       "total": 5
+      },
+      {
+       "name": "Catalan Numbers",
+       "solved": 0,
+       "total": 5
+      },
+      {
+       "name": "XOR Basis",
+       "solved": 0,
+       "total": 13
+      },
+      {
+       "name": "Fracturing Search",
+       "solved": 0,
+       "total": 3
+      },
+      {
+       "name": "Game Theory",
+       "solved": 0,
+       "total": 15
+      },
+      {
+       "name": "Prefix Sums of Number-Theoretic Functions (Part 1)",
+       "solved": 0,
+       "total": 8
+      },
+      {
+       "name": "Prefix Sums of Number-Theoretic Functions (Part 1); Prefix Sums of Number-Theoretic Functions (Part 2)",
+       "solved": 0,
+       "total": 1
+      },
+      {
+       "name": "Prefix Sums of Number-Theoretic Functions (Part 2)",
+       "solved": 0,
+       "total": 3
+      },
+      {
+       "name": "Matroids",
+       "solved": 0,
+       "total": 4
+      },
+      {
+       "name": "Matroid Intersection",
+       "solved": 0,
+       "total": 6
+      },
+      {
+       "name": "Randomness",
+       "solved": 0,
+       "total": 6
+      },
+      {
+       "name": "Interactive and Communication Problems",
+       "solved": 0,
+       "total": 26
+      },
+      {
+       "name": "Vectorization in C++",
+       "solved": 0,
+       "total": 1
+      }
+     ]
+    }
+   ]
+  }
+ },
+ "totalSolved": 1168,
+ "ratingDistribution": {
+  "buckets": {
+   "800": {
+    "codeforces": 92,
+    "atcoder": 4,
+    "leetcode": 81,
+    "sheet": 8
+   },
+   "900": {
+    "codeforces": 19,
+    "leetcode": 54,
+    "sheet": 2
+   },
+   "1000": {
+    "codeforces": 22,
+    "leetcode": 54,
+    "sheet": 9
+   },
+   "1100": {
+    "codeforces": 19,
+    "atcoder": 2,
+    "leetcode": 38,
+    "sheet": 12
+   },
+   "1200": {
+    "codeforces": 25,
+    "atcoder": 1,
+    "leetcode": 24,
+    "sheet": 13
+   },
+   "1300": {
+    "codeforces": 29,
+    "leetcode": 31,
+    "sheet": 9
+   },
+   "1400": {
+    "codeforces": 17,
+    "leetcode": 33,
+    "sheet": 5
+   },
+   "1500": {
+    "codeforces": 25,
+    "atcoder": 1,
+    "leetcode": 32,
+    "sheet": 7
+   },
+   "1600": {
+    "codeforces": 24,
+    "leetcode": 16,
+    "sheet": 7
+   },
+   "1700": {
+    "codeforces": 20,
+    "leetcode": 18,
+    "sheet": 9
+   },
+   "1800": {
+    "codeforces": 17,
+    "leetcode": 14,
+    "sheet": 8
+   },
+   "1900": {
+    "codeforces": 17,
+    "leetcode": 5,
+    "sheet": 7
+   },
+   "2000": {
+    "codeforces": 16,
+    "leetcode": 8
+   },
+   "2100": {
+    "codeforces": 7,
+    "atcoder": 1,
+    "leetcode": 10,
+    "sheet": 1
+   },
+   "2200": {
+    "codeforces": 6,
+    "leetcode": 6,
+    "sheet": 1
+   },
+   "2300": {
+    "codeforces": 10,
+    "leetcode": 2,
+    "sheet": 1
+   },
+   "2400": {
+    "codeforces": 4,
+    "atcoder": 2,
+    "leetcode": 1
+   },
+   "2500": {
+    "leetcode": 1
+   },
+   "2700": {
+    "codeforces": 1,
+    "leetcode": 2
+   },
+   "2800": {
+    "codeforces": 1
+   },
+   "3000": {
+    "codeforces": 1
+   }
+  },
+  "unrated": {
+   "codeforces": 6,
+   "atcoder": 1,
+   "leetcode": 249
+  },
+  "includesLeetCode": true
+ }
+}
