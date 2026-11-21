@@ -1,0 +1,98 @@
+[
+  {
+    "id": "calibrated-dynamics",
+    "title": "Calibrated Dynamics",
+    "subtitle": "Uncertainty-aware learning and control of a triple pendulum",
+    "status": "In progress",
+    "summary": "Building controllers that swing a three-link pendulum upright and balance it, in a MuJoCo simulation. The project compares model-free reinforcement learning with learned probabilistic dynamics, uncertainty-aware planning, and conformal calibration under distribution shift.",
+    "highlights": [
+      "Custom Gymnasium environment: 9-D observations, 3 continuous motor torques, validated with Stable-Baselines3",
+      "Soft Actor-Critic (SAC) training with checkpointing and real-time policy playback",
+      "Reproduction of Manzl et al.'s cart-mounted triple-pendulum balance task, ported from Exudyn to MuJoCo"
+    ],
+    "tags": [
+      "Python",
+      "PyTorch",
+      "MuJoCo",
+      "Gymnasium",
+      "Stable-Baselines3",
+      "Reinforcement learning"
+    ],
+    "visual": {
+      "type": "pendulum"
+    },
+    "links": [
+      {
+        "label": "Code",
+        "url": "https://github.com/ThinhTruongN/Calibrated-Dynamics"
+      },
+      {
+        "label": "Paper reproduction notes",
+        "url": "https://github.com/ThinhTruongN/Calibrated-Dynamics/blob/main/PAPER_REPRODUCTION.md"
+      }
+    ]
+  },
+  {
+    "id": "earthquake-forecasting",
+    "title": "Regional Earthquake Forecasting",
+    "subtitle": "Can machine learning beat a statistical baseline?",
+    "status": "Completed",
+    "summary": "A statistics and machine-learning study on 17,229 USGS earthquakes (2020–2025) asking whether ML improves monthly earthquake-occurrence probabilities across 60 regional grid cells, compared against Poisson baselines.",
+    "result": "Logistic regression reached a 0.0867 Brier score on held-out 2025 data versus 0.0915 for the Poisson baseline (5.3% lower error), though the bootstrap interval includes zero, so the improvement isn't conclusive.",
+    "highlights": [
+      "Leakage-safe time split: train 2021–23, validate 2024, test Jan–Nov 2025",
+      "Compared Poisson baselines, logistic regression and gradient boosting on Brier score, log loss, calibration and AUC",
+      "Reproducible Python pipeline, written report and an interactive static dashboard (original C++ prototype included)"
+    ],
+    "tags": [
+      "Python",
+      "scikit-learn",
+      "Statistics",
+      "Forecasting",
+      "C++"
+    ],
+    "visual": {
+      "type": "image",
+      "src": "assets/img/projects/earthquake-risk.png",
+      "alt": "Line chart of observed versus predicted fraction of active regions per month in 2025; the logistic-regression forecast stays near 0.22 while observed values range from 0.20 to 0.28."
+    },
+    "links": [
+      {
+        "label": "Code",
+        "url": "https://github.com/ThinhTruongN/Earthquake-Risk"
+      },
+      {
+        "label": "Report",
+        "url": "https://github.com/ThinhTruongN/Earthquake-Risk/blob/main-thinh/analysis/artifacts/REPORT.md"
+      }
+    ]
+  },
+  {
+    "id": "huawei-scheduler",
+    "title": "Huawei Two-Week Challenge",
+    "subtitle": "Scheduling LLM inference across an edge server and remote servers",
+    "status": "Challenge entry",
+    "summary": "An interactive, event-driven scheduler written in C++ for Huawei's two-week programming challenge. Every frame it reads arrival, transfer and completion events from the judge, then decides what runs next on a local edge server and on K remote servers, as each request moves through prefill and decode phases with network transfers in between.",
+    "highlights": [
+      "Tracks every request through an 18-state lifecycle: pre-processing, layer-by-layer processing and post-processing for both prefill and decode, plus uploads and downloads",
+      "Baseline policy: oldest-ready-first on every server, with new requests placed on the least-loaded remote server",
+      "Speaks the judge's interactive frame-by-frame protocol, reading events and emitting task assignments"
+    ],
+    "tags": [
+      "C++",
+      "Scheduling",
+      "Systems",
+      "LLM inference",
+      "Heuristics"
+    ],
+    "visual": {
+      "type": "scheduler"
+    },
+    "links": [
+      {
+        "label": "Code",
+        "url": "https://github.com/ThinhTruongN/Huawei2WeeksChallenge"
+      }
+    ]
+  }
+]

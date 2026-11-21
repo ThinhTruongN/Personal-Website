@@ -55,18 +55,6 @@
     return { lo, hi, ticks };
   }
 
-  // ---------------------------------------------------------- theme
-  function initTheme(onChange) {
-    $("theme-toggle").addEventListener("click", () => {
-      const cur = document.documentElement.dataset.theme
-        || (matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
-      const next = cur === "dark" ? "light" : "dark";
-      document.documentElement.dataset.theme = next;
-      try { localStorage.setItem("theme", next); } catch {}
-      onChange();
-    });
-    matchMedia("(prefers-color-scheme: dark)").addEventListener("change", onChange);
-  }
 
   // ---------------------------------------------------------- activity model
   function buildActivity(data) {
@@ -528,13 +516,6 @@
 
   // ---------------------------------------------------------- boot
   async function main() {
-    $("year").textContent = new Date().getFullYear();
-    try {
-      const cfg = await (await fetch("config.json", { cache: "no-cache" })).json();
-      document.querySelectorAll("[data-bind]").forEach((n) => { if (cfg[n.dataset.bind]) n.textContent = cfg[n.dataset.bind]; });
-      if (cfg.name) document.title = cfg.name;
-    } catch {}
-
     let data;
     try {
       data = await (await fetch("data/cp.json", { cache: "no-cache" })).json();
@@ -554,7 +535,7 @@
     const drawHeat = () => { renderHeatmapControls(data, days, drawHeat); renderHeatmap(data, days, today); renderMonthly(days, today); };
     const drawAll = () => { drawRating(); drawHeat(); renderDifficulty(data); };
     drawAll();
-    initTheme(drawAll);
+    document.addEventListener("themechange", drawAll); // fired by common.js
 
     let w = window.innerWidth, timer;
     window.addEventListener("resize", () => {

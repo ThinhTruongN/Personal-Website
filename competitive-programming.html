@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Competitive Programming · Thinh Nguyen</title>
+  <meta name="description" content="Live competitive programming stats: Codeforces, AtCoder, LeetCode, CSES and USACO Guide.">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='7' fill='%236250d6'/><text x='16' y='22' font-family='system-ui,sans-serif' font-size='16' font-weight='700' fill='white' text-anchor='middle'>TN</text></svg>">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script>
+    document.documentElement.classList.add("js");
+    try { const t = localStorage.getItem("theme"); if (t) document.documentElement.dataset.theme = t; } catch {}
+  </script>
+</head>
+<body>
+  <header class="nav-bar">
+    <nav class="wrap nav-inner" aria-label="Main">
+      <a class="brand" href="./" data-bind="name">Thinh Nguyen</a>
+      <div class="nav-links">
+        <a href="projects.html">Projects</a>
+        <a href="research.html">Research</a>
+        <a href="competitive-programming.html" aria-current="page"><span class="long">Competitive Programming</span><span class="short">CP</span></a>
+      </div>
+      <button class="theme-toggle" id="theme-toggle" type="button" aria-label="Toggle dark mode">
+        <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero wrap">
+      <h1 class="reveal">Competitive Programming.</h1>
+      <p class="lede reveal">Live stats from Codeforces, AtCoder, LeetCode, CSES and the USACO Guide — refreshed automatically every day.</p>
+      <p class="muted small reveal" id="cp-updated" style="margin-top:12px"></p>
+    </section>
+    <section id="cp" class="section wrap">
+
+      <div class="tiles" id="cp-tiles" aria-live="polite"></div>
+
+      <div class="platforms" id="cp-platforms"></div>
+
+      <article class="card">
+        <div class="card-head">
+          <h3>Rating history</h3>
+          <div class="segmented" id="rating-tabs" role="tablist" aria-label="Platform"></div>
+        </div>
+        <div class="chart" id="rating-chart"></div>
+        <details class="table-view">
+          <summary>View as table</summary>
+          <div id="rating-table"></div>
+        </details>
+      </article>
+
+      <article class="card">
+        <div class="card-head">
+          <div>
+            <h3>Consistency</h3>
+            <p class="muted small" id="heatmap-caption"></p>
+          </div>
+          <div class="filters">
+            <div class="segmented" id="heatmap-platforms" role="group" aria-label="Platform filter"></div>
+            <select id="heatmap-range" class="select" aria-label="Time range"></select>
+          </div>
+        </div>
+        <div class="heatmap-scroll" id="heatmap"></div>
+        <div class="heatmap-legend muted small" id="heatmap-legend"></div>
+        <h4 class="subhead">Active days per month</h4>
+        <div class="chart" id="monthly-chart"></div>
+      </article>
+
+      <div class="grid-2">
+        <article class="card">
+          <div class="card-head">
+            <h3>CSES Problem Set</h3>
+            <a class="muted small" href="https://cses.fi/problemset/" target="_blank" rel="noopener">cses.fi ↗</a>
+          </div>
+          <div id="cses-progress"></div>
+        </article>
+        <article class="card">
+          <div class="card-head">
+            <h3>USACO Guide</h3>
+            <a class="muted small" href="https://usaco.guide/" target="_blank" rel="noopener">usaco.guide ↗</a>
+          </div>
+          <div id="usaco-progress"></div>
+        </article>
+      </div>
+
+      <article class="card" id="difficulty-card">
+        <div class="card-head">
+          <div>
+            <h3>Problems solved by difficulty</h3>
+            <p class="muted small">Codeforces-equivalent rating (estimated)</p>
+          </div>
+          <div class="legend" id="difficulty-legend"></div>
+        </div>
+        <div class="chart" id="difficulty-chart"></div>
+        <p class="footnote muted small" id="difficulty-note"></p>
+        <details class="table-view">
+          <summary>View as table</summary>
+          <div id="difficulty-table"></div>
+        </details>
+      </article>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <span>© <span id="year"></span> <span data-bind="name">Thinh Nguyen</span></span>
+      <div class="footer-links">
+        <a href="https://github.com/ThinhTruongN" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://codeforces.com/profile/NomNomFull" target="_blank" rel="noopener">Codeforces</a>
+        <a href="https://leetcode.com/u/NomNomCode/" target="_blank" rel="noopener">LeetCode</a>
+        <a href="https://atcoder.jp/users/NomNomCode" target="_blank" rel="noopener">AtCoder</a>
+      </div>
+    </div>
+  </footer>
+  <div class="tooltip" id="tooltip" role="tooltip" hidden></div>
+  <script src="assets/js/common.js" defer></script>
+  <script src="assets/js/cp.js" defer></script>
+</body>
+</html>
