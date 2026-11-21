@@ -1,26 +1,101 @@
 [
   {
+    "id": "rare-sign-source-diversity",
+    "title": "Source Diversity for Rare Cuneiform Sign Recognition",
+    "type": "Ongoing research · TokenWorks LLC internship",
+    "year": "2026",
+    "authors": "Thinh Truong Nguyen",
+    "affiliation": "Research internship, TokenWorks LLC",
+    "tagline": "For a rare sign, is one more training example worth more if it comes from a new tablet?",
+    "abstractTitle": "Overview",
+    "abstract": "Cuneiform sign-recognition models learn from crops cut out of photographed clay tablets, and rare signs may have only a handful of examples. Crops from the same tablet share a scribe, clay, lighting and photograph, so simply counting examples per class can overstate how much a model has to learn from. This project asks how much one extra training crop of a rare sign is worth for recognition on unseen tablets, depending on where it comes from: a tablet already in training, a new tablet, a tablet from another site, or an augmented or synthetic copy. It uses the public electronic Babylonian Library (eBL) Sign Snippets release, with tablet-disjoint splits, matched training conditions and paired seeds, and keeps a reserved test set untouched until the design is final.",
+    "stats": [
+      {
+        "value": "12.7% → 19.5%",
+        "label": "recall on unseen tablets when the same 8 examples per sign come from 8 tablets instead of 2"
+      },
+      {
+        "value": "24 of 30",
+        "label": "rare signs improved, with the gain holding in all 3 paired seeds"
+      },
+      {
+        "value": "71% → 82%",
+        "label": "precision rose too: the model recognized the signs rather than just predicting them more often"
+      }
+    ],
+    "compare": {
+      "title": "Recall on unseen tablets, same 8 examples per sign",
+      "items": [
+        {
+          "label": "From 2 tablets",
+          "value": 12.7
+        },
+        {
+          "label": "From 8 tablets",
+          "value": 19.5
+        }
+      ],
+      "unit": "%"
+    },
+    "findingsTitle": "First pilot (validation set only)",
+    "findings": [
+      "Same budget, more tablets, better recognition. Spreading 8 training crops per sign across 8 source tablets instead of 2 raised recall on unseen tablets from 12.7% to 19.5% for 30 Old Babylonian signs (ResNet-18, 20,891 crops from 337 tablets).",
+      "No cost elsewhere. Accuracy on the other 167 classes was unchanged (72.1% vs 71.8%).",
+      "The training protocol matters. With random initialization and a constant learning rate, the model barely learned the 8-example signs and the difference could not be distinguished from zero; the effect appeared with ImageNet-pretrained weights and cosine learning-rate decay.",
+      "Open question: part of the benefit may come from photographic variety, such as clay colour and lighting, rather than scribal hand. This pilot can't separate the two yet."
+    ],
+    "links": []
+  },
+  {
     "id": "conformal-shift",
     "title": "Conformal Prediction Under Distribution Shift",
-    "type": "Independent research",
+    "type": "Ongoing research · Independent",
     "year": "2026",
     "authors": "Thinh Truong Nguyen",
     "affiliation": "University of California, Berkeley",
     "tagline": "What happens to a coverage guarantee when the world changes?",
     "abstract": "Split-conformal prediction gives regression models finite-sample, distribution-free prediction intervals with a guaranteed coverage rate, but the guarantee relies on the calibration and test data being exchangeable. This project asks a direct question: what happens to that coverage guarantee when the test distribution no longer matches the calibration distribution? Using synthetic nonlinear regression data with a known ground-truth function, we build 90% split-conformal intervals, confirm they behave correctly with no shift, and then deliberately introduce three kinds of distribution shift — covariate shift, noise shift, and subgroup (mixture) shift — to measure how badly empirical coverage degrades. We then test four candidate fixes: recalibrating on the shifted distribution, calibrating per subgroup, using a larger calibration set, and changing the base regression model. Recalibration and group-specific calibration both restore coverage close to nominal, but recalibration does so by inflating interval width dramatically, exposing a coverage-vs-usefulness trade-off that is easy to miss if only coverage is reported.",
     "stats": [
-      { "value": "17.8%", "label": "coverage under strong covariate shift, against a 90% target" },
-      { "value": "≈7×", "label": "wider intervals needed to restore coverage by recalibration (3.84 → 28.0)" },
-      { "value": "92.9%", "label": "coverage kept by group-specific calibration where pooled drops to 73.3%" }
+      {
+        "value": "17.8%",
+        "label": "coverage under strong covariate shift, against a 90% target"
+      },
+      {
+        "value": "≈7×",
+        "label": "wider intervals needed to restore coverage by recalibration (3.84 → 28.0)"
+      },
+      {
+        "value": "92.9%",
+        "label": "coverage kept by group-specific calibration where pooled drops to 73.3%"
+      }
     ],
     "findings": [
       "Coverage must always be read next to interval width. Both successful fixes restore coverage, but only by widening intervals, sometimes up to 7× under large covariate shift.",
       "Knowing the structure of the shift beats brute-force recalibration. Group-specific calibration restores coverage without runaway width growth, because it only widens intervals for the subpopulation that needs it."
     ],
+    "nextSteps": [
+      "Implement weighted conformal prediction (Tibshirani et al., 2019), which reweights calibration residuals by an estimated likelihood ratio and doesn't need fresh labeled data from the shifted distribution.",
+      "Implement adaptive conformal inference (Gibbs & Candès, 2021) for settings where the shift is gradual rather than a single step change.",
+      "Replace fixed-width intervals with conformalized quantile regression or normalized scores, so interval width adapts to local difficulty.",
+      "Repeat every shift sweep over multiple random seeds and report confidence bands, not single point estimates.",
+      "Move from synthetic data to a real dataset with a natural train/test shift."
+    ],
     "figures": [
-      { "src": "assets/research/conformal-shift/covariate_shift.png", "caption": "Empirical coverage as the test input mean moves from 0 to 3, using the interval width calibrated at 0.", "alt": "Line chart: coverage falls from 91% with no shift to 18% at a shift of 3, against a 90% target line." },
-      { "src": "assets/research/conformal-shift/fixes_covariate.png", "caption": "Standard (fixed calibration) vs. recalibrated coverage under covariate shift.", "alt": "Line chart comparing standard coverage, which collapses with shift, to recalibrated coverage, which stays near 90%." },
-      { "src": "assets/research/conformal-shift/fixes_subgroup.png", "caption": "Pooled vs. group-specific coverage as the test population's group-B fraction grows from 20% to 80%.", "alt": "Line chart: pooled coverage drops to 73% while group-specific coverage stays near or above 90%." }
+      {
+        "src": "assets/research/conformal-shift/covariate_shift.png",
+        "caption": "Empirical coverage as the test input mean moves from 0 to 3, using the interval width calibrated at 0.",
+        "alt": "Line chart: coverage falls from 91% with no shift to 18% at a shift of 3, against a 90% target line."
+      },
+      {
+        "src": "assets/research/conformal-shift/fixes_covariate.png",
+        "caption": "Standard (fixed calibration) vs. recalibrated coverage under covariate shift.",
+        "alt": "Line chart comparing standard coverage, which collapses with shift, to recalibrated coverage, which stays near 90%."
+      },
+      {
+        "src": "assets/research/conformal-shift/fixes_subgroup.png",
+        "caption": "Pooled vs. group-specific coverage as the test population's group-B fraction grows from 20% to 80%.",
+        "alt": "Line chart: pooled coverage drops to 73% while group-specific coverage stays near or above 90%."
+      }
     ],
     "inspiredBy": [
       "Tibshirani, Barber, Candès & Ramdas, Conformal Prediction Under Covariate Shift (NeurIPS 2019)",
@@ -28,7 +103,10 @@
     ],
     "pdf": "assets/research/conformal-shift/report.pdf",
     "links": [
-      { "label": "Code", "url": "https://github.com/ThinhTruongN/Conformal-Risk-Prediction" }
+      {
+        "label": "Code",
+        "url": "https://github.com/ThinhTruongN/Conformal-Risk-Prediction"
+      }
     ]
   }
 ]

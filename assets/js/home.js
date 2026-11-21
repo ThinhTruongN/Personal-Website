@@ -48,12 +48,13 @@
 
   function researchPromo(r) {
     const fig = r.figures?.[0];
-    return `<a class="promo wide reveal" href="research.html#${esc(r.id)}">
-      <p class="eyebrow">Research</p>
+    const visual = fig ? plate(fig.src, fig.alt || fig.caption) : r.compare ? window.site.compareBars(r.compare) : "";
+    return `<a class="promo wide${fig ? "" : " compact"} reveal" href="research.html#${esc(r.id)}">
+      <p class="eyebrow">${/ongoing/i.test(r.type || "") ? "Research · Ongoing" : "Research"}</p>
       <h3>${esc(r.title)}</h3>
       <p>${esc(r.tagline || "")}</p>
-      <span class="more">Read the paper</span>
-      ${fig ? plate(fig.src, fig.alt || fig.caption) : ""}
+      <span class="more">${!r.pdf ? "Learn more" : /ongoing/i.test(r.type || "") ? "Read the draft" : "Read the paper"}</span>
+      ${visual}
     </a>`;
   }
 

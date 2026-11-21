@@ -4,7 +4,7 @@
   "use strict";
   const { esc } = window.site;
 
-  const paper = (r, i) => `
+  const paper = (r, i, _, ongoing = /ongoing/i.test(r.type || ""), doc = ongoing ? "draft" : "paper") => `
     <article class="paper" id="${esc(r.id)}">
       <header class="paper-head reveal">
         <p class="eyebrow">${esc(r.type)}${r.year ? ` · ${esc(r.year)}` : ""}</p>
@@ -12,22 +12,27 @@
         ${r.tagline ? `<p class="tagline">${esc(r.tagline)}</p>` : ""}
         <p class="byline">${esc(r.authors)}${r.affiliation ? ` · ${esc(r.affiliation)}` : ""}</p>
         <div class="btn-row">
-          ${r.pdf ? `<a class="btn btn-primary" href="#${esc(r.id)}-reader">Read the paper</a>` : ""}
-          ${r.pdf ? `<a class="btn btn-secondary" href="${esc(r.pdf)}" download>Download PDF</a>` : ""}
+          ${r.pdf ? `<a class="btn btn-primary" href="#${esc(r.id)}-reader">Read the ${doc}</a>` : ""}
+          ${r.pdf ? `<a class="btn btn-secondary" href="${esc(r.pdf)}" download>Download ${ongoing ? "draft" : "PDF"}</a>` : ""}
           ${(r.links || []).map((l) => `<a class="btn btn-secondary" href="${esc(l.url)}" target="_blank" rel="noopener">${esc(l.label)}</a>`).join("")}
         </div>
       </header>
 
       ${r.stats?.length ? `<div class="big-stats">${r.stats.map((s) => `
-        <div class="big-stat reveal"><div class="v">${esc(s.value)}</div><div class="l">${esc(s.label)}</div></div>`).join("")}</div>` : ""}
+        <div class="big-stat reveal"><div class="v${String(s.value).length > 8 ? " long" : ""}">${esc(s.value)}</div><div class="l">${esc(s.label)}</div></div>`).join("")}</div>` : ""}
 
       <section class="panel reveal">
-        <h3>Abstract</h3>
+        <h3>${esc(r.abstractTitle || "Abstract")}</h3>
         <p class="abstract">${esc(r.abstract)}</p>
       </section>
 
-      ${r.findings?.length ? `<section class="panel reveal"><h3>Key findings</h3>
+      ${r.compare ? `<section class="panel reveal"><h3>${esc(r.compare.title)}</h3>${window.site.compareBars(r.compare)}</section>` : ""}
+
+      ${r.findings?.length ? `<section class="panel reveal"><h3>${esc(r.findingsTitle || "Key findings")}</h3>
         <ol class="findings">${r.findings.map((f) => `<li>${esc(f)}</li>`).join("")}</ol></section>` : ""}
+
+      ${r.nextSteps?.length ? `<section class="panel reveal"><h3>Next steps</h3>
+        <ul class="findings next">${r.nextSteps.map((f) => `<li>${esc(f)}</li>`).join("")}</ul></section>` : ""}
 
       ${r.figures?.length ? `<section class="panel reveal"><h3>Figures</h3><div class="gallery">${r.figures.map((f) => `
         <figure><div class="figure"><img src="${esc(f.src)}" alt="${esc(f.alt || f.caption)}" loading="lazy"></div>
@@ -35,7 +40,7 @@
 
       ${r.pdf ? `<section class="reader reveal" id="${esc(r.id)}-reader" data-pdf="${esc(r.pdf)}">
         <div class="reader-bar">
-          <h3>Full paper</h3>
+          <h3>${ongoing ? "Current draft" : "Full paper"}</h3>
           <span class="pageinfo"></span>
           <a class="more" href="${esc(r.pdf)}" target="_blank" rel="noopener">Open in new tab</a>
         </div>

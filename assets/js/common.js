@@ -57,6 +57,20 @@
       <path d="M224 161 h30 m0 0 l-8 -6 m8 6 l-8 6" stroke="var(--muted)" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
     </svg>`;
 
+  // ---- before/after bars from research.json "compare" (research + home pages)
+  site.compareBars = (c) => {
+    if (!c?.items?.length) return "";
+    const esc = site.esc;
+    const max = Math.max(...c.items.map((d) => d.value)) * 1.15;
+    return `<div class="compare" role="img" aria-label="${esc(c.title)}: ${c.items.map((d) => `${esc(d.label)} ${d.value}${esc(c.unit || "")}`).join(", ")}">
+      ${c.items.map((d, i) => `<div class="compare-row">
+        <span class="compare-label">${esc(d.label)}</span>
+        <span class="compare-track"><span class="compare-bar${i === c.items.length - 1 ? " hi" : ""}" style="width:${(d.value / max) * 100}%"></span></span>
+        <span class="compare-value">${esc(d.value)}${esc(c.unit || "")}</span>
+      </div>`).join("")}
+    </div>`;
+  };
+
   // ---- shared illustration: requests flowing from an edge server to K remote servers
   const remotes = [30, 82, 134].map((y, i) => `
       <path d="M118 100 C 160 100, 168 ${y + 18}, 210 ${y + 18}" stroke="var(--accent)" stroke-width="2.5" fill="none" stroke-linecap="round"/>
