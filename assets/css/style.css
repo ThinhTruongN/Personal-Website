@@ -129,6 +129,10 @@ ul, ol { margin: 0; }
 .nav-links a:hover { color: var(--text); }
 .nav-links a[aria-current="page"] { color: var(--text); text-decoration: underline; text-decoration-color: var(--text); }
 .nav-links .short { display: none; }
+.nav-icons { display: flex; gap: 2px; flex: none; }
+.nav-icons a { width: 28px; height: 28px; display: grid; place-items: center; color: var(--muted); border-radius: 4px; }
+.nav-icons a:hover { color: var(--text); }
+.nav-icons svg { width: 16px; height: 16px; fill: currentColor; }
 .theme-toggle {
   flex: none; width: 28px; height: 28px; border: 0; background: transparent; color: var(--muted);
   display: grid; place-items: center; cursor: pointer; border-radius: 4px;
@@ -143,8 +147,10 @@ ul, ol { margin: 0; }
   :root:not([data-theme="light"]) .theme-toggle .icon-moon { display: block; }
 }
 @media (max-width: 600px) {
+  .nav-inner { flex-wrap: wrap; row-gap: 4px; padding-top: 10px; padding-bottom: 10px; min-height: 0; }
   .brand { font-size: 0.9375rem; }
-  .nav-links { gap: 14px; }
+  .nav-icons { margin-left: auto; }
+  .nav-links { order: 3; width: 100%; margin-left: 0; gap: 18px; }
   .nav-links .long { display: none; }
   .nav-links .short { display: inline; }
 }
