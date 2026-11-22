@@ -1,38 +1,5 @@
 [
   {
-    "id": "calibrated-dynamics",
-    "title": "Calibrated Dynamics",
-    "subtitle": "Uncertainty-aware learning and control of a triple pendulum",
-    "status": "In progress",
-    "summary": "Building controllers that swing a three-link pendulum upright and balance it, in a MuJoCo simulation. The project compares model-free reinforcement learning with learned probabilistic dynamics, uncertainty-aware planning, and conformal calibration under distribution shift.",
-    "highlights": [
-      "Custom Gymnasium environment: 9-D observations, 3 continuous motor torques, validated with Stable-Baselines3",
-      "Soft Actor-Critic (SAC) training with checkpointing and real-time policy playback",
-      "Reproduction of Manzl et al.'s cart-mounted triple-pendulum balance task, ported from Exudyn to MuJoCo"
-    ],
-    "tags": [
-      "Python",
-      "PyTorch",
-      "MuJoCo",
-      "Gymnasium",
-      "Stable-Baselines3",
-      "Reinforcement learning"
-    ],
-    "visual": {
-      "type": "pendulum"
-    },
-    "links": [
-      {
-        "label": "Code",
-        "url": "https://github.com/ThinhTruongN/Calibrated-Dynamics"
-      },
-      {
-        "label": "Paper reproduction notes",
-        "url": "https://github.com/ThinhTruongN/Calibrated-Dynamics/blob/main/PAPER_REPRODUCTION.md"
-      }
-    ]
-  },
-  {
     "id": "earthquake-forecasting",
     "title": "Regional Earthquake Forecasting",
     "subtitle": "Can machine learning beat a statistical baseline?",

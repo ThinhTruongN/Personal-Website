@@ -1,6 +1,6 @@
 {
-  "name": "Thinh Nguyen",
-  "tagline": "Competitive programmer · builder · researcher",
+  "name": "Thinh Truong Nguyen",
+  "tagline": "Mathematics at UC Berkeley · machine learning research",
   "timezone": "UTC",
   "handles": {
     "codeforces": "NomNomFull",
@@ -10,6 +10,12 @@
   "spreadsheet": {
     "id": "1L_uJc8-Byz1SYtqc-aYfMcaGep4CfA1Oir8VyN94M3w",
     "cses": "CSES",
-    "usacoGuide": ["USACO Bronze", "USACO Silver", "USACO Gold", "USACO Platinum", "USACO Advanced"]
+    "usacoGuide": [
+      "USACO Bronze",
+      "USACO Silver",
+      "USACO Gold",
+      "USACO Platinum",
+      "USACO Advanced"
+    ]
   }
 }

@@ -5,7 +5,7 @@
     "type": "Ongoing research · TokenWorks LLC internship",
     "year": "2026",
     "authors": "Thinh Truong Nguyen",
-    "affiliation": "Research internship, TokenWorks LLC",
+    "affiliation": "TokenWorks LLC · Supervisor: Dr. Adam Anderson (UC Berkeley)",
     "tagline": "For a rare sign, is one more training example worth more if it comes from a new tablet?",
     "abstractTitle": "Overview",
     "abstract": "Cuneiform sign-recognition models learn from crops cut out of photographed clay tablets, and rare signs may have only a handful of examples. Crops from the same tablet share a scribe, clay, lighting and photograph, so simply counting examples per class can overstate how much a model has to learn from. This project asks how much one extra training crop of a rare sign is worth for recognition on unseen tablets, depending on where it comes from: a tablet already in training, a new tablet, a tablet from another site, or an augmented or synthetic copy. It uses the public electronic Babylonian Library (eBL) Sign Snippets release, with tablet-disjoint splits, matched training conditions and paired seeds, and keeps a reserved test set untouched until the design is final.",
@@ -39,12 +39,82 @@
     },
     "findingsTitle": "First pilot (validation set only)",
     "findings": [
-      "Same budget, more tablets, better recognition. Spreading 8 training crops per sign across 8 source tablets instead of 2 raised recall on unseen tablets from 12.7% to 19.5% for 30 Old Babylonian signs (ResNet-18, 20,891 crops from 337 tablets).",
+      "Same budget, more tablets, better recognition. With an ImageNet-pretrained ResNet-18, spreading 8 training crops per sign across 8 source tablets instead of 2 raised recall on unseen tablets from 12.7% to 19.5% for 30 Old Babylonian signs (20,891 crops from 337 tablets).",
       "No cost elsewhere. Accuracy on the other 167 classes was unchanged (72.1% vs 71.8%).",
       "The training protocol matters. With random initialization and a constant learning rate, the model barely learned the 8-example signs and the difference could not be distinguished from zero; the effect appeared with ImageNet-pretrained weights and cosine learning-rate decay.",
-      "Open question: part of the benefit may come from photographic variety, such as clay colour and lighting, rather than scribal hand. This pilot can't separate the two yet."
+      "Now separating the two possible sources of the gain: photographic variation, such as clay colour and lighting, versus scribal hand."
     ],
     "links": []
+  },
+  {
+    "id": "calibrated-dynamics",
+    "title": "Calibrated Dynamics: Conformal Calibration of Learned Dynamics for Control",
+    "type": "Ongoing research · Independent",
+    "year": "2026",
+    "authors": "Thinh Truong Nguyen",
+    "affiliation": "Self-directed",
+    "tagline": "Can a calibrated learned model keep a triple pendulum balanced when the motor changes?",
+    "abstractTitle": "Overview",
+    "abstract": "A cart-mounted triple pendulum is unstable, fast and unforgiving of model error. This project reproduces Manzl et al.'s balance task in MuJoCo and then asks three questions: can a learned probabilistic dynamics model replace reinforcement-learning training, can its uncertainty be trusted, and does conformal calibration keep that uncertainty honest when the physics shift? A bootstrapped ensemble of Gaussian MLPs (PETS-style) is trained on 19,825 random transitions, about 25× less data than PPO, and used for learned-LQR and cross-entropy model-predictive control. Multi-step prediction boxes are calibrated with split conformal prediction offline and with adaptive conformal inference online, and every controller is tested as the cart's motor is made weaker or stronger than in training.",
+    "stats": [
+      {
+        "value": "25×",
+        "label": "less data than PPO: controllers built on the learned model reached 89–100% success from 19,825 random transitions"
+      },
+      {
+        "value": "10 of 12",
+        "label": "tests balanced by MPC with a 1.5× stronger motor, where PPO and learned LQR fell to 0%"
+      },
+      {
+        "value": "89.7–90.1%",
+        "label": "coverage held by online conformal under motor shifts from 0.5× to 1.5×, where offline regions collapsed to 0–7%"
+      }
+    ],
+    "findings": [
+      "A learned model can replace RL training for balance. 19,825 random-action transitions (6.6 simulated minutes) gave learned-LQR and MPC controllers that matched or beat PPO trained for 500,000 steps, without depending on a lucky training seed.",
+      "The ensemble's own uncertainty is not trustworthy: depending on the data, it over-covers or underestimates the error by up to 6×.",
+      "Offline calibration breaks under shift; online calibration holds. Split conformal boxes reach about 90% coverage on the training motor but collapse to 0–7% under any motor shift, while adaptive conformal inference with a rolling window holds 89.7–90.1% from 0.5× to 1.5×.",
+      "Valid coverage is not enough for control. Adaptive conformal margins over-tightened MPC's constraints and made the planner fail; capping the margins removed the collapse, confirming the cause. Here calibration is more useful for detecting a wrong model than as a hard safety margin."
+    ],
+    "nextSteps": [
+      "Swing-up: hand over from a swing-up controller to one of these balance controllers near upright.",
+      "Online model adaptation: refit the model on recent transitions so a changed motor is learned, not just detected, using online conformal coverage as the trigger.",
+      "Use calibrated uncertainty without over-tightening, for example soft constraints with bounded penalties, or a fallback controller when the calibrated region grows too large."
+    ],
+    "figures": [
+      {
+        "src": "assets/research/calibrated-dynamics/coverage.png",
+        "wide": true,
+        "caption": "Coverage of calibrated multi-step prediction boxes. Left: by horizon on the training motor. Right: at 15 steps ahead as the motor force changes.",
+        "alt": "Two panels: all methods near 90% on the training motor; under motor shift only online conformal stays at 90% while the others drop near 0%."
+      },
+      {
+        "src": "assets/research/calibrated-dynamics/control_shift.png",
+        "wide": true,
+        "caption": "Balance success when the motor differs from training: model-free vs. model-based, ensemble uncertainty in the planner, and conformal safety margins.",
+        "alt": "Three panels of success rate versus motor force scale; nominal MPC stays high at 1.5× while PPO and learned LQR fall to zero, and adaptive conformal margins fail away from nominal."
+      },
+      {
+        "src": "assets/research/calibrated-dynamics/data_efficiency.png",
+        "caption": "Learned-LQR success as the amount of random training data grows, for three model seeds.",
+        "alt": "Success jumps from 0% below 5,000 transitions to 60–95% at 10,000 and 95–100% at about 20,000."
+      }
+    ],
+    "inspiredBy": [
+      "Manzl et al., Reliability Evaluation of Reinforcement Learning Methods for Mechanical Systems with Increasing Complexity (Multibody System Dynamics)",
+      "Chua, Calandra, McAllister & Levine, Deep Reinforcement Learning in a Handful of Trials Using Probabilistic Dynamics Models (NeurIPS 2018)",
+      "Gibbs & Candès, Adaptive Conformal Inference Under Distribution Shift (NeurIPS 2021)"
+    ],
+    "links": [
+      {
+        "label": "Code",
+        "url": "https://github.com/ThinhTruongN/Calibrated-Dynamics"
+      },
+      {
+        "label": "Results write-up",
+        "url": "https://github.com/ThinhTruongN/Calibrated-Dynamics/blob/main/MODEL_BASED_RESULTS.md"
+      }
+    ]
   },
   {
     "id": "conformal-shift",
