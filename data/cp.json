@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-21T23:17:29.402Z",
+ "updatedAt": "2026-11-22T06:43:29.763Z",
  "timezone": "UTC",
  "codeforces": {
   "handle": "NomNomFull",
@@ -1019,12 +1019,12 @@
  "sheet": {
   "cses": {
    "name": "CSES",
-   "solved": 92,
+   "solved": 94,
    "total": 400,
    "categories": [
     {
      "name": "Introductory Problems",
-     "solved": 13,
+     "solved": 15,
      "total": 24
     },
     {
@@ -1115,12 +1115,12 @@
    ]
   },
   "usacoGuide": {
-   "solved": 19,
+   "solved": 22,
    "total": 1496,
    "tiers": [
     {
      "name": "Bronze",
-     "solved": 1,
+     "solved": 4,
      "total": 116,
      "categories": [
       {
@@ -1135,12 +1135,12 @@
       },
       {
        "name": "Basic Complete Search",
-       "solved": 0,
+       "solved": 2,
        "total": 20
       },
       {
        "name": "Complete Search with Recursion",
-       "solved": 0,
+       "solved": 1,
        "total": 8
       },
       {
@@ -1901,14 +1901,14 @@
    ]
   }
  },
- "totalSolved": 1169,
+ "totalSolved": 1173,
  "ratingDistribution": {
   "buckets": {
    "800": {
     "codeforces": 92,
     "atcoder": 4,
     "leetcode": 81,
-    "sheet": 8
+    "sheet": 9
    },
    "900": {
     "codeforces": 19,
@@ -1924,7 +1924,7 @@
     "codeforces": 19,
     "atcoder": 2,
     "leetcode": 38,
-    "sheet": 12
+    "sheet": 13
    },
    "1200": {
     "codeforces": 25,
@@ -1956,12 +1956,12 @@
    "1700": {
     "codeforces": 20,
     "leetcode": 18,
-    "sheet": 9
+    "sheet": 10
    },
    "1800": {
     "codeforces": 17,
     "leetcode": 14,
-    "sheet": 8
+    "sheet": 9
    },
    "1900": {
     "codeforces": 17,
