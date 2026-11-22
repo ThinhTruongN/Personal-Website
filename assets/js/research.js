@@ -35,7 +35,7 @@
         <ul class="findings next">${r.nextSteps.map((f) => `<li>${esc(f)}</li>`).join("")}</ul></section>` : ""}
 
       ${r.figures?.length ? `<section class="panel reveal"><h3>Figures</h3><div class="gallery">${r.figures.map((f) => `
-        <figure><div class="figure"><img src="${esc(f.src)}" alt="${esc(f.alt || f.caption)}" loading="lazy"></div>
+        <figure${f.wide ? ' class="wide"' : ""}><div class="figure"><img src="${esc(f.src)}" alt="${esc(f.alt || f.caption)}" loading="lazy"></div>
         <figcaption>${esc(f.caption)}</figcaption></figure>`).join("")}</div></section>` : ""}
 
       ${r.pdf ? `<section class="reader reveal" id="${esc(r.id)}-reader" data-pdf="${esc(r.pdf)}">

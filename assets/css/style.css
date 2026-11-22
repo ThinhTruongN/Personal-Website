@@ -305,8 +305,9 @@ a.promo:hover { transform: scale(1.01); }
 .findings { margin: 0; padding-left: 20px; color: var(--text-2); }
 .findings li { margin: 10px 0; }
 .findings li::marker { color: var(--accent); }
-.gallery { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.gallery { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px 20px; }
 .gallery figure { margin: 0; }
+.gallery figure.wide { grid-column: 1 / -1; }
 .gallery .figure { background: #fff; border-radius: 14px; padding: 8px; border: 1px solid var(--border); }
 .gallery img { display: block; width: 100%; height: auto; }
 .gallery figcaption { color: var(--muted); font-size: 0.8125rem; margin-top: 8px; line-height: 1.4; letter-spacing: 0; }

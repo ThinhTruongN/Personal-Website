@@ -53,53 +53,75 @@
     "year": "2026",
     "authors": "Thinh Truong Nguyen",
     "affiliation": "University of California, Berkeley",
-    "tagline": "What happens to a coverage guarantee when the world changes?",
-    "abstract": "Split-conformal prediction gives regression models finite-sample, distribution-free prediction intervals with a guaranteed coverage rate, but the guarantee relies on the calibration and test data being exchangeable. This project asks a direct question: what happens to that coverage guarantee when the test distribution no longer matches the calibration distribution? Using synthetic nonlinear regression data with a known ground-truth function, we build 90% split-conformal intervals, confirm they behave correctly with no shift, and then deliberately introduce three kinds of distribution shift — covariate shift, noise shift, and subgroup (mixture) shift — to measure how badly empirical coverage degrades. We then test four candidate fixes: recalibrating on the shifted distribution, calibrating per subgroup, using a larger calibration set, and changing the base regression model. Recalibration and group-specific calibration both restore coverage close to nominal, but recalibration does so by inflating interval width dramatically, exposing a coverage-vs-usefulness trade-off that is easy to miss if only coverage is reported.",
+    "tagline": "What happens to a coverage guarantee when the world changes, and what can restore it?",
+    "abstract": "Split-conformal prediction gives regression models finite-sample, distribution-free prediction intervals with a guaranteed coverage rate, but the guarantee relies on the calibration and test data being exchangeable. This project asks a direct question: what happens to that coverage guarantee when the test distribution no longer matches the calibration distribution, and what can restore it? Using synthetic nonlinear regression data with a known ground-truth function, we build 90% split-conformal intervals, confirm they hit their target with no shift, and then introduce covariate, noise, and subgroup (mixture) shift. Every setting is repeated over 100 independent calibration/test draws. Coverage falls as low as 18%. We then evaluate a range of fixes: recalibration on shifted data, weighted conformal prediction with exact and estimated likelihood ratios, group-specific calibration, larger calibration sets, alternative base models, locally adaptive intervals (normalized scores and conformalized quantile regression), and, for streaming data, adaptive conformal inference (ACI) and rolling-window calibration. A single theme runs through the results: every method that restores coverage does so by spending interval width, and the methods differ mainly in how intelligently they spend it. Recalibration inflates widths almost sevenfold; weighted conformal stays valid but returns infinite intervals for most points under strong shift; normalized scores and group-specific calibration widen intervals only where the data are actually harder; and ACI combined with a rolling window holds 90% long-run coverage on drifting streams with no infinite intervals.",
     "stats": [
       {
-        "value": "17.8%",
-        "label": "coverage under strong covariate shift, against a 90% target"
+        "value": "18.4%",
+        "label": "coverage under strong covariate shift, against a 90% target (mean of 100 trials)"
       },
       {
-        "value": "≈7×",
-        "label": "wider intervals needed to restore coverage by recalibration (3.84 → 28.0)"
+        "value": "6.8×",
+        "label": "wider intervals needed to restore coverage by recalibration (4.08 → 27.65)"
       },
       {
-        "value": "92.9%",
-        "label": "coverage kept by group-specific calibration where pooled drops to 73.3%"
+        "value": "90.0%",
+        "label": "long-run coverage on drifting data streams with ACI plus a rolling window, and no infinite intervals"
       }
     ],
     "findings": [
-      "Coverage must always be read next to interval width. Both successful fixes restore coverage, but only by widening intervals, sometimes up to 7× under large covariate shift.",
-      "Knowing the structure of the shift beats brute-force recalibration. Group-specific calibration restores coverage without runaway width growth, because it only widens intervals for the subpopulation that needs it."
+      "Coverage must always be read next to interval width. Every method that restores coverage does so by spending width: recalibration widens intervals 6.8-fold under large covariate shift, and weighted conformal returns infinite intervals for most points.",
+      "Methods differ in where they spend width. Group-specific calibration and normalized scores widen intervals only for the points that are actually harder, holding coverage under mixture-type shift at a far smaller cost than generic recalibration. This requires the source of difficulty to be observable, as a group label or as a function of x.",
+      "Validity without labels has limits set by overlap. Weighted conformal needs no labels from the new distribution, and estimated weights work as well as exact ones here, but 16% of intervals are infinite at a shift of 1.0 and nearly all are from 2.5 on. It is a tool for moderate shift, not extrapolation.",
+      "When labels arrive over time, online correction works. ACI gives a long-run guarantee under arbitrary drift; combined with a rolling calibration window it holds 90% coverage with finite intervals in every streaming scenario, where standard intervals fall to 72–78%."
     ],
     "nextSteps": [
-      "Implement weighted conformal prediction (Tibshirani et al., 2019), which reweights calibration residuals by an estimated likelihood ratio and doesn't need fresh labeled data from the shifted distribution.",
-      "Implement adaptive conformal inference (Gibbs & Candès, 2021) for settings where the shift is gradual rather than a single step change.",
-      "Replace fixed-width intervals with conformalized quantile regression or normalized scores, so interval width adapts to local difficulty.",
-      "Repeat every shift sweep over multiple random seeds and report confidence bands, not single point estimates.",
-      "Move from synthetic data to a real dataset with a natural train/test shift."
+      "Move from synthetic data to a real dataset with a natural shift, such as a temporal or geographic split, to check whether these findings transfer.",
+      "Handle subgroup shift when group labels are not known, for example by clustering residuals or covariates to discover latent subgroups before calibrating per cluster.",
+      "Combine methods: normalized scores inside weighted conformal or ACI, so intervals adapt both to local difficulty and to shift.",
+      "Remove the need to hand-pick ACI's step size, and study delayed labels and periodic model retraining in the streaming setting.",
+      "Add diagnostics for weighted conformal, such as reporting the effective sample size, so a deployed system can flag when the calibration data no longer cover the test distribution."
     ],
     "figures": [
       {
         "src": "assets/research/conformal-shift/covariate_shift.png",
-        "caption": "Empirical coverage as the test input mean moves from 0 to 3, using the interval width calibrated at 0.",
-        "alt": "Line chart: coverage falls from 91% with no shift to 18% at a shift of 3, against a 90% target line."
-      },
-      {
-        "src": "assets/research/conformal-shift/fixes_covariate.png",
-        "caption": "Standard (fixed calibration) vs. recalibrated coverage under covariate shift.",
-        "alt": "Line chart comparing standard coverage, which collapses with shift, to recalibrated coverage, which stays near 90%."
+        "caption": "Coverage as the test input mean moves from 0 to 3, using intervals calibrated at 0. Shaded: ±1 sd over 100 trials.",
+        "alt": "Line chart: coverage falls from 90% with no shift to about 18% at a shift of 3, against a 90% target."
       },
       {
         "src": "assets/research/conformal-shift/fixes_subgroup.png",
-        "caption": "Pooled vs. group-specific coverage as the test population's group-B fraction grows from 20% to 80%.",
-        "alt": "Line chart: pooled coverage drops to 73% while group-specific coverage stays near or above 90%."
+        "caption": "Pooled vs. group-specific calibration as the test population's group-B fraction grows from 20% to 80%.",
+        "alt": "Two panels: pooled coverage drops to 73% while group-specific coverage stays near 90%; group-specific interval length grows with the group-B fraction."
+      },
+      {
+        "src": "assets/research/conformal-shift/fixes_covariate.png",
+        "wide": true,
+        "caption": "Fixes under covariate shift, scored on the same test sets. Left: coverage. Middle: median interval length (log scale). Right: share of test points that received an infinite interval.",
+        "alt": "Three panels comparing standard, recalibrated and weighted conformal under covariate shift: coverage, median interval length, and share of infinite intervals."
+      },
+      {
+        "src": "assets/research/conformal-shift/adaptive_conditional.png",
+        "caption": "No shift: coverage and interval length within bins of |x3|, the driver of the noise level. All three methods have 90% marginal coverage.",
+        "alt": "Two panels: standard coverage falls from 98% to 56% as noise grows, normalized scores stay near 90%, CQR is in between."
+      },
+      {
+        "src": "assets/research/conformal-shift/adaptive_shift.png",
+        "caption": "Coverage and average interval length as the mean of x3 shifts toward the high-noise region.",
+        "alt": "Two panels: under shift toward the noisy region, standard coverage falls to 67%, normalized scores hold near 88–90%, CQR reaches 81%."
+      },
+      {
+        "src": "assets/research/conformal-shift/online.png",
+        "wide": true,
+        "caption": "Streaming data. Top: coverage over the trailing 500 steps, averaged over 100 trials. Bottom: median interval length at each step.",
+        "alt": "Coverage and interval length over time for standard, ACI, rolling window, and rolling window plus ACI in three drift scenarios."
       }
     ],
     "inspiredBy": [
       "Tibshirani, Barber, Candès & Ramdas, Conformal Prediction Under Covariate Shift (NeurIPS 2019)",
-      "Gibbs & Candès, Adaptive Conformal Inference Under Distribution Shift (NeurIPS 2021)"
+      "Gibbs & Candès, Adaptive Conformal Inference Under Distribution Shift (NeurIPS 2021)",
+      "Romano, Patterson & Candès, Conformalized Quantile Regression (NeurIPS 2019)",
+      "Lei, G'Sell, Rinaldo, Tibshirani & Wasserman, Distribution-Free Predictive Inference for Regression (JASA 2018)",
+      "Papadopoulos, Proedrou, Vovk & Gammerman, Inductive Confidence Machines for Regression (ECML 2002)"
     ],
     "pdf": "assets/research/conformal-shift/report.pdf",
     "links": [
