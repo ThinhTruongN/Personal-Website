@@ -89,6 +89,36 @@
     </a>`;
   }
 
+  // Résumé preview: load PDF.js only when the tile is near the viewport, then draw page 1.
+  function mountResumePreview() {
+    const el = document.querySelector(".resume-preview[data-pdf]");
+    if (!el || !("IntersectionObserver" in window)) return;
+    const V = "assets/vendor/pdfjs-3.11.174/";
+    const loadLib = () => window.pdfjsLib ? Promise.resolve(window.pdfjsLib) : new Promise((ok, fail) => {
+      const s = document.createElement("script");
+      s.src = V + "pdf.min.js"; s.onload = () => ok(window.pdfjsLib); s.onerror = fail;
+      document.head.appendChild(s);
+    });
+    const io = new IntersectionObserver(async (entries) => {
+      if (!entries.some((e) => e.isIntersecting)) return;
+      io.disconnect();
+      try {
+        const lib = await loadLib();
+        lib.GlobalWorkerOptions.workerSrc = V + "pdf.worker.min.js";
+        const page = await (await lib.getDocument(el.dataset.pdf).promise).getPage(1);
+        const base = page.getViewport({ scale: 1 });
+        const scale = (el.clientWidth / base.width) * Math.min(window.devicePixelRatio || 1, 2.5);
+        const vp = page.getViewport({ scale });
+        const canvas = document.createElement("canvas");
+        canvas.width = Math.floor(vp.width); canvas.height = Math.floor(vp.height);
+        await page.render({ canvasContext: canvas.getContext("2d"), viewport: vp }).promise;
+        el.replaceChildren(canvas);
+      } catch { /* keep the text fallback; the buttons still open the PDF */ }
+    }, { rootMargin: "300px 0px" });
+    io.observe(el);
+  }
+  mountResumePreview();
+
   Promise.all([
     getJSON("data/cp.json").catch(() => null),
     getJSON("content/projects.json").catch(() => []),

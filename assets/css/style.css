@@ -251,6 +251,35 @@ a.promo:hover { transform: scale(1.01); }
   :root:not([data-theme="light"]) .plate img, :root:not([data-theme="light"]) .figure img { filter: brightness(0.9); }
 }
 
+/* Résumé tile (home) */
+#resume { margin-bottom: 20px; }
+.resume-tile {
+  display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(24px, 4vw, 56px); align-items: center;
+  background: var(--surface); border-radius: var(--radius-lg); box-shadow: var(--shadow);
+  padding: clamp(28px, 5vw, 56px) clamp(20px, 5vw, 56px); overflow: hidden;
+}
+.resume-text h3 { font-size: clamp(1.75rem, 3.4vw, 2.5rem); font-weight: 700; letter-spacing: -0.03em; line-height: 1.1; }
+.resume-text p:not(.eyebrow) { color: var(--text-2); font-size: 1.125rem; margin-top: 12px; }
+.resume-text .eyebrow { font-size: 0.9375rem; margin-bottom: 8px; }
+.resume-text .btn-row { margin-top: 24px; }
+.resume-preview {
+  display: block; justify-self: center; width: min(100%, 420px); aspect-ratio: 8.5 / 11;
+  background: #fff; border-radius: 6px; overflow: hidden; position: relative;
+  box-shadow: 0 1px 3px rgba(0,0,0,.12), 0 18px 48px rgba(0,0,0,.14);
+  transform: rotate(-1.5deg); transition: transform .4s cubic-bezier(.2,.7,.2,1);
+}
+.resume-preview:hover { transform: rotate(0deg) scale(1.02); }
+.resume-preview canvas { display: block; width: 100%; height: 100%; }
+.resume-fallback { position: absolute; inset: 0; display: grid; place-items: center; color: #6e6e73; font-weight: 600; }
+:root[data-theme="dark"] .resume-preview canvas { filter: brightness(0.92); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .resume-preview canvas { filter: brightness(0.92); } }
+@media (max-width: 760px) {
+  .resume-tile { grid-template-columns: 1fr; text-align: center; }
+  .resume-text .btn-row { justify-content: center; }
+  .resume-preview { width: min(100%, 320px); }
+}
+@media (prefers-reduced-motion: reduce) { .resume-preview, .resume-preview:hover { transform: none; } }
+
 /* =================================================================
    Projects (feature rows)
    ================================================================= */
