@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-22T17:51:32.667Z",
+ "updatedAt": "2026-11-23T18:12:38.895Z",
  "timezone": "UTC",
  "codeforces": {
   "handle": "NomNomFull",
@@ -218,7 +218,7 @@
     "place": 22
    }
   ],
-  "solved": 378,
+  "solved": 379,
   "solvedByRating": {
    "800": 92,
    "900": 19,
@@ -229,7 +229,7 @@
    "1400": 17,
    "1500": 25,
    "1600": 24,
-   "1700": 20,
+   "1700": 21,
    "1800": 17,
    "1900": 17,
    "2000": 16,
@@ -243,14 +243,16 @@
    "unrated": 6
   },
   "tags": {
-   "brute force": 67,
-   "constructive algorithms": 79,
+   "bitmasks": 22,
+   "brute force": 68,
+   "constructive algorithms": 80,
+   "geometry": 3,
+   "implementation": 97,
+   "math": 139,
    "data structures": 55,
    "greedy": 174,
-   "implementation": 96,
    "sortings": 46,
    "dp": 82,
-   "geometry": 2,
    "graphs": 19,
    "expression parsing": 2,
    "strings": 28,
@@ -260,11 +262,9 @@
    "dfs and similar": 26,
    "binary search": 52,
    "two pointers": 35,
-   "math": 138,
    "trees": 22,
    "games": 13,
    "shortest paths": 4,
-   "bitmasks": 21,
    "hashing": 6,
    "number theory": 36,
    "2-sat": 2,
@@ -281,6 +281,7 @@
    "flows": 2
   },
   "daily": {
+   "2026-11-23": 1,
    "2026-11-19": 1,
    "2026-11-09": 1,
    "2026-11-02": 1,
@@ -1115,12 +1116,12 @@
    ]
   },
   "usacoGuide": {
-   "solved": 22,
+   "solved": 23,
    "total": 1496,
    "tiers": [
     {
      "name": "Bronze",
-     "solved": 4,
+     "solved": 5,
      "total": 116,
      "categories": [
       {
@@ -1150,7 +1151,7 @@
       },
       {
        "name": "Complete Search with Recursion; Casework",
-       "solved": 0,
+       "solved": 1,
        "total": 1
       },
       {
@@ -1901,7 +1902,7 @@
    ]
   }
  },
- "totalSolved": 1173,
+ "totalSolved": 1174,
  "ratingDistribution": {
   "buckets": {
    "800": {
@@ -1954,7 +1955,7 @@
     "sheet": 7
    },
    "1700": {
-    "codeforces": 20,
+    "codeforces": 21,
     "leetcode": 18,
     "sheet": 10
    },
