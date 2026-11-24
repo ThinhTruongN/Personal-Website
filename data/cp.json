@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-23T18:12:38.895Z",
+ "updatedAt": "2026-11-24T17:47:40.374Z",
  "timezone": "UTC",
  "codeforces": {
   "handle": "NomNomFull",
@@ -218,7 +218,7 @@
     "place": 22
    }
   ],
-  "solved": 379,
+  "solved": 381,
   "solvedByRating": {
    "800": 92,
    "900": 19,
@@ -229,10 +229,10 @@
    "1400": 17,
    "1500": 25,
    "1600": 24,
-   "1700": 21,
+   "1700": 22,
    "1800": 17,
    "1900": 17,
-   "2000": 16,
+   "2000": 17,
    "2100": 7,
    "2200": 6,
    "2300": 10,
@@ -243,14 +243,16 @@
    "unrated": 6
   },
   "tags": {
+   "data structures": 56,
+   "dsu": 13,
+   "greedy": 175,
+   "implementation": 98,
+   "two pointers": 36,
+   "brute force": 69,
+   "constructive algorithms": 81,
    "bitmasks": 22,
-   "brute force": 68,
-   "constructive algorithms": 80,
    "geometry": 3,
-   "implementation": 97,
    "math": 139,
-   "data structures": 55,
-   "greedy": 174,
    "sortings": 46,
    "dp": 82,
    "graphs": 19,
@@ -258,10 +260,8 @@
    "strings": 28,
    "combinatorics": 14,
    "divide and conquer": 9,
-   "dsu": 12,
    "dfs and similar": 26,
    "binary search": 52,
-   "two pointers": 35,
    "trees": 22,
    "games": 13,
    "shortest paths": 4,
@@ -281,7 +281,8 @@
    "flows": 2
   },
   "daily": {
-   "2026-11-23": 1,
+   "2026-11-24": 1,
+   "2026-11-23": 2,
    "2026-11-19": 1,
    "2026-11-09": 1,
    "2026-11-02": 1,
@@ -1116,12 +1117,12 @@
    ]
   },
   "usacoGuide": {
-   "solved": 23,
+   "solved": 27,
    "total": 1496,
    "tiers": [
     {
      "name": "Bronze",
-     "solved": 5,
+     "solved": 9,
      "total": 116,
      "categories": [
       {
@@ -1141,7 +1142,7 @@
       },
       {
        "name": "Complete Search with Recursion",
-       "solved": 1,
+       "solved": 2,
        "total": 8
       },
       {
@@ -1166,7 +1167,7 @@
       },
       {
        "name": "Introduction to Sets & Maps",
-       "solved": 0,
+       "solved": 2,
        "total": 11
       },
       {
@@ -1181,7 +1182,7 @@
       },
       {
        "name": "Introduction to Greedy Algorithms",
-       "solved": 0,
+       "solved": 1,
        "total": 11
       },
       {
@@ -1902,7 +1903,7 @@
    ]
   }
  },
- "totalSolved": 1174,
+ "totalSolved": 1178,
  "ratingDistribution": {
   "buckets": {
    "800": {
@@ -1952,10 +1953,10 @@
    "1600": {
     "codeforces": 24,
     "leetcode": 16,
-    "sheet": 7
+    "sheet": 9
    },
    "1700": {
-    "codeforces": 21,
+    "codeforces": 22,
     "leetcode": 18,
     "sheet": 10
    },
@@ -1970,7 +1971,7 @@
     "sheet": 8
    },
    "2000": {
-    "codeforces": 16,
+    "codeforces": 17,
     "leetcode": 8
    },
    "2100": {
