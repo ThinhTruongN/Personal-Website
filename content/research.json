@@ -119,7 +119,7 @@
   {
     "id": "conformal-shift",
     "title": "Conformal Prediction Under Distribution Shift",
-    "type": "Ongoing research · Independent",
+    "type": "Completed research · Independent",
     "year": "2026",
     "authors": "Thinh Truong Nguyen",
     "affiliation": "University of California, Berkeley",
@@ -198,6 +198,10 @@
       {
         "label": "Code",
         "url": "https://github.com/ThinhTruongN/Conformal-Risk-Prediction"
+      },
+      {
+        "label": "Technical report (PDF)",
+        "url": "assets/research/conformal-shift/report.pdf"
       }
     ]
   }
