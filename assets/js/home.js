@@ -13,8 +13,9 @@
     </li>`;
 
   const researchMeta = (r) => {
-    const where = (r.type || "").replace(/^Ongoing research · /i, "").replace(/^Independent research$/i, "Independent");
-    return [/ongoing/i.test(r.type || "") ? "Ongoing" : null, where, r.year].filter(Boolean).join(" · ");
+    const status = (r.type || "").match(/^(Ongoing|Completed) research · /i);
+    const where = (r.type || "").replace(/^(Ongoing|Completed) research · /i, "").replace(/^Independent research$/i, "Independent");
+    return [status ? status[1] : null, where, r.year].filter(Boolean).join(" · ");
   };
 
   function cpLine(cp) {
