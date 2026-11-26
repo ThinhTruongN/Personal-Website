@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T16:55:54.323Z",
+ "updatedAt": "2026-11-26T20:19:52.311Z",
  "timezone": "UTC",
  "codeforces": {
   "handle": "NomNomFull",
@@ -218,14 +218,14 @@
     "place": 22
    }
   ],
-  "solved": 381,
+  "solved": 382,
   "solvedByRating": {
    "800": 92,
    "900": 19,
    "1000": 22,
    "1100": 19,
    "1200": 25,
-   "1300": 29,
+   "1300": 30,
    "1400": 17,
    "1500": 25,
    "1600": 24,
@@ -243,12 +243,12 @@
    "unrated": 6
   },
   "tags": {
+   "brute force": 70,
    "data structures": 56,
    "dsu": 13,
    "greedy": 175,
    "implementation": 98,
    "two pointers": 36,
-   "brute force": 69,
    "constructive algorithms": 81,
    "bitmasks": 22,
    "geometry": 3,
@@ -281,6 +281,7 @@
    "flows": 2
   },
   "daily": {
+   "2026-11-26": 1,
    "2026-11-24": 1,
    "2026-11-23": 2,
    "2026-11-19": 1,
@@ -1117,12 +1118,12 @@
    ]
   },
   "usacoGuide": {
-   "solved": 27,
+   "solved": 30,
    "total": 1496,
    "tiers": [
     {
      "name": "Bronze",
-     "solved": 9,
+     "solved": 12,
      "total": 116,
      "categories": [
       {
@@ -1192,7 +1193,7 @@
       },
       {
        "name": "Rectangle Geometry",
-       "solved": 0,
+       "solved": 3,
        "total": 6
       },
       {
@@ -1903,7 +1904,7 @@
    ]
   }
  },
- "totalSolved": 1178,
+ "totalSolved": 1181,
  "ratingDistribution": {
   "buckets": {
    "800": {
@@ -1920,7 +1921,7 @@
    "1000": {
     "codeforces": 22,
     "leetcode": 54,
-    "sheet": 9
+    "sheet": 10
    },
    "1100": {
     "codeforces": 19,
@@ -1935,7 +1936,7 @@
     "sheet": 13
    },
    "1300": {
-    "codeforces": 29,
+    "codeforces": 30,
     "leetcode": 31,
     "sheet": 9
    },
@@ -1958,7 +1959,7 @@
    "1700": {
     "codeforces": 22,
     "leetcode": 18,
-    "sheet": 10
+    "sheet": 11
    },
    "1800": {
     "codeforces": 17,
