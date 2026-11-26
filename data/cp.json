@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T20:19:52.311Z",
+ "updatedAt": "2026-11-26T20:30:24.194Z",
  "timezone": "UTC",
  "codeforces": {
   "handle": "NomNomFull",
@@ -218,7 +218,7 @@
     "place": 22
    }
   ],
-  "solved": 382,
+  "solved": 383,
   "solvedByRating": {
    "800": 92,
    "900": 19,
@@ -229,7 +229,7 @@
    "1400": 17,
    "1500": 25,
    "1600": 24,
-   "1700": 22,
+   "1700": 23,
    "1800": 17,
    "1900": 17,
    "2000": 17,
@@ -243,6 +243,8 @@
    "unrated": 6
   },
   "tags": {
+   "geometry": 4,
+   "math": 140,
    "brute force": 70,
    "data structures": 56,
    "dsu": 13,
@@ -251,8 +253,6 @@
    "two pointers": 36,
    "constructive algorithms": 81,
    "bitmasks": 22,
-   "geometry": 3,
-   "math": 139,
    "sortings": 46,
    "dp": 82,
    "graphs": 19,
@@ -281,7 +281,7 @@
    "flows": 2
   },
   "daily": {
-   "2026-11-26": 1,
+   "2026-11-26": 2,
    "2026-11-24": 1,
    "2026-11-23": 2,
    "2026-11-19": 1,
@@ -1957,9 +1957,9 @@
     "sheet": 9
    },
    "1700": {
-    "codeforces": 22,
+    "codeforces": 23,
     "leetcode": 18,
-    "sheet": 11
+    "sheet": 10
    },
    "1800": {
     "codeforces": 17,
