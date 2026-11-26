@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T20:31:15.341Z",
+ "updatedAt": "2026-11-26T22:28:36.206Z",
  "timezone": "UTC",
  "codeforces": {
   "handle": "NomNomFull",
@@ -243,10 +243,11 @@
    "unrated": 6
   },
   "tags": {
-   "geometry": 4,
-   "math": 140,
-   "brute force": 70,
    "data structures": 56,
+   "dp": 82,
+   "math": 140,
+   "geometry": 4,
+   "brute force": 70,
    "dsu": 13,
    "greedy": 175,
    "implementation": 98,
@@ -254,7 +255,6 @@
    "constructive algorithms": 81,
    "bitmasks": 22,
    "sortings": 46,
-   "dp": 82,
    "graphs": 19,
    "expression parsing": 2,
    "strings": 28,
@@ -281,6 +281,7 @@
    "flows": 2
   },
   "daily": {
+   "2026-01-11": 4,
    "2026-11-26": 2,
    "2026-11-24": 1,
    "2026-11-23": 2,
@@ -406,7 +407,6 @@
    "2026-01-14": 7,
    "2026-01-13": 2,
    "2026-01-12": 5,
-   "2026-01-11": 4,
    "2026-01-10": 1,
    "2026-01-08": 1,
    "2026-01-07": 2,
@@ -1118,7 +1118,7 @@
    ]
   },
   "usacoGuide": {
-   "solved": 30,
+   "solved": 32,
    "total": 1496,
    "tiers": [
     {
@@ -1210,12 +1210,12 @@
     },
     {
      "name": "Silver",
-     "solved": 0,
+     "solved": 2,
      "total": 265,
      "categories": [
       {
        "name": "Introduction to Prefix Sums",
-       "solved": 0,
+       "solved": 1,
        "total": 14
       },
       {
@@ -1225,7 +1225,7 @@
       },
       {
        "name": "More on Prefix Sums; Custom Comparators and Coordinate Compression",
-       "solved": 0,
+       "solved": 1,
        "total": 1
       },
       {
@@ -1904,7 +1904,7 @@
    ]
   }
  },
- "totalSolved": 1181,
+ "totalSolved": 1182,
  "ratingDistribution": {
   "buckets": {
    "800": {
@@ -1964,7 +1964,7 @@
    "1800": {
     "codeforces": 17,
     "leetcode": 14,
-    "sheet": 9
+    "sheet": 10
    },
    "1900": {
     "codeforces": 17,
