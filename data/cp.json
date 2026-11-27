@@ -1,5 +1,5 @@
 {
- "updatedAt": "2026-11-26T22:43:59.025Z",
+ "updatedAt": "2026-11-27T16:41:34.738Z",
  "timezone": "UTC",
  "codeforces": {
   "handle": "NomNomFull",
@@ -1933,7 +1933,7 @@
     "codeforces": 25,
     "atcoder": 1,
     "leetcode": 24,
-    "sheet": 13
+    "sheet": 14
    },
    "1300": {
     "codeforces": 30,
@@ -1969,7 +1969,7 @@
    "1900": {
     "codeforces": 17,
     "leetcode": 5,
-    "sheet": 9
+    "sheet": 8
    },
    "2000": {
     "codeforces": 17,
